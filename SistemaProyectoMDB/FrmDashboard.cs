@@ -7,12 +7,18 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace SistemaProyectoMDB
 {
     public partial class FrmDashboard : Form
     {
+        private bool isFormActive = false;
+        private bool isDragging = false;
+        private Point lastCursor;
+        private Point lastForm;
         public FrmDashboard()
         {
             InitializeComponent();
@@ -45,10 +51,112 @@ namespace SistemaProyectoMDB
             this.Close();
             login.Show();
         }
+        private void OpenChildForm(Form childForm)
+        {
+            // Verificar si hay un formulario hijo abierto en el panel
+            foreach (Control control in PnlContenido.Controls)
+            {
+                if (control is Form openForm)
+                {
+                    // Verificar si el formulario abierto es el mismo que el que se quiere abrir
+                    if (openForm.GetType() == childForm.GetType())
+                    {
+                        MessageBox.Show("El formulario ya está abierto.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
 
+                    // Confirmar con el usuario si desea cerrar el formulario actual
+                    DialogResult result = MessageBox.Show(
+                        "Ya hay un formulario abierto. ¿Desea cerrarlo?",
+                        "Confirmar cierre",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question
+                    );
+                    if (result == DialogResult.Yes)
+                    {
+                        PnlContenido.Controls.Clear();
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+            PnlContenido.Controls.Clear();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            PnlContenido.Controls.Add(childForm);
+            childForm.Show();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmTablaUsuario frmusuario = new FrmTablaUsuario();
+            OpenChildForm(frmusuario);
+        }
+
+        private void FrmDashboard_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = true;
+                lastCursor = Cursor.Position;
+                lastForm = this.Location;
+            }
+        }
+
+        private void FrmDashboard_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                Point delta = Point.Subtract(Cursor.Position, new Size(lastCursor));
+                this.Location = Point.Add(lastForm, new Size(delta));
+            }
+        }
+
+        private void FrmDashboard_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = false;
+            }
+        }
+
+        private void panel2_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = true;
+                lastCursor = Cursor.Position;
+                lastForm = this.Location;
+            }
+        }
+
+        private void panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isDragging)
+            {
+                Point delta = Point.Subtract(Cursor.Position, new Size(lastCursor));
+                this.Location = Point.Add(lastForm, new Size(delta));
+            }
+        }
+
+        private void panel2_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                isDragging = false;
+            }
         }
     }
 }

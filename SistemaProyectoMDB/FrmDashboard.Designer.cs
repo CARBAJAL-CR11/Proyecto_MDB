@@ -36,13 +36,15 @@
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            BtnUsuarios = new Button();
             panel2 = new Panel();
             label1 = new Label();
             PnlContenido = new Panel();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            PnlContenido.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -55,8 +57,7 @@
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(BtnUsuarios);
             panel1.Location = new Point(0, -2);
             panel1.Name = "panel1";
             panel1.Size = new Size(225, 748);
@@ -74,7 +75,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(1, 519);
+            button8.Location = new Point(0, 472);
             button8.Name = "button8";
             button8.Size = new Size(225, 43);
             button8.TabIndex = 1;
@@ -110,7 +111,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(-3, 467);
+            button4.Location = new Point(-3, 421);
             button4.Name = "button4";
             button4.Size = new Size(229, 45);
             button4.TabIndex = 3;
@@ -119,30 +120,22 @@
             // 
             // button3
             // 
-            button3.Location = new Point(1, 417);
+            button3.Location = new Point(0, 372);
             button3.Name = "button3";
             button3.Size = new Size(225, 43);
             button3.TabIndex = 2;
             button3.Text = "Peliculas";
             button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnUsuarios
             // 
-            button2.Location = new Point(1, 173);
-            button2.Name = "button2";
-            button2.Size = new Size(225, 46);
-            button2.TabIndex = 1;
-            button2.Text = "Usuarios";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(1, 372);
-            button1.Name = "button1";
-            button1.Size = new Size(225, 40);
-            button1.TabIndex = 0;
-            button1.Text = "Categorias";
-            button1.UseVisualStyleBackColor = true;
+            BtnUsuarios.Location = new Point(1, 173);
+            BtnUsuarios.Name = "BtnUsuarios";
+            BtnUsuarios.Size = new Size(225, 46);
+            BtnUsuarios.TabIndex = 1;
+            BtnUsuarios.Text = "Usuarios";
+            BtnUsuarios.UseVisualStyleBackColor = true;
+            BtnUsuarios.Click += BtnUsuarios_Click;
             // 
             // panel2
             // 
@@ -152,6 +145,10 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1116, 38);
             panel2.TabIndex = 1;
+            panel2.MouseDown += panel2_MouseDown;
+            panel2.MouseEnter += panel2_MouseEnter;
+            panel2.MouseMove += panel2_MouseMove;
+            panel2.MouseUp += panel2_MouseUp;
             // 
             // label1
             // 
@@ -164,10 +161,21 @@
             // 
             // PnlContenido
             // 
+            PnlContenido.Controls.Add(pictureBox1);
             PnlContenido.Location = new Point(223, 31);
             PnlContenido.Name = "PnlContenido";
             PnlContenido.Size = new Size(1113, 715);
             PnlContenido.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Operating_system_rafiki;
+            pictureBox1.Location = new Point(260, 88);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(563, 475);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // FrmDashboard
             // 
@@ -179,10 +187,16 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmDashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmDashboard";
             Load += FrmDashboard_Load;
+            MouseDown += FrmDashboard_MouseDown;
+            MouseMove += FrmDashboard_MouseMove;
+            MouseUp += FrmDashboard_MouseUp;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            PnlContenido.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -191,8 +205,7 @@
         private Panel panel1;
         private Button button4;
         private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button BtnUsuarios;
         private Button button7;
         private Button button6;
         private Button button5;
@@ -201,5 +214,6 @@
         private Panel panel2;
         private Label label1;
         private Panel PnlContenido;
+        private PictureBox pictureBox1;
     }
 }

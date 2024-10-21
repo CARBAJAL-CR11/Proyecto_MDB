@@ -63,6 +63,16 @@ namespace SistemaProyectoMDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Operating_system_rafiki {
+            get {
+                object obj = ResourceManager.GetObject("Operating system-rafiki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rb_3180 {
             get {
                 object obj = ResourceManager.GetObject("rb_3180", resourceCulture);

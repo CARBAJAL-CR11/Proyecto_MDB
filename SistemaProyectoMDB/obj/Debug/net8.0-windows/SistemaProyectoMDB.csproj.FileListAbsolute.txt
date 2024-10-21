@@ -18,3 +18,5 @@ C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmDashboard.resources
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmLogin.resources
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.Properties.Resources.resources
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaUsuario.resources
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmFormUsuarios.resources
