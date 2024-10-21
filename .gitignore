@@ -1,34 +1,43 @@
-# Visual Studio
-.vscode/
+# Archivos de Visual Studio
 .vs/
-*.suo
+.vscode/
 *.user
+*.suo
 *.userosscache
 *.sln.docstates
 
-# Build results
+# Archivos de Build
 bin/
 obj/
-[Bb]uild[Ll]og.*
+*.dll
+*.exe
+*.log
+*.pdb
 
-# NuGet packages
+# Archivos de Paquetes y dependencias
+packages/
 *.nupkg
-# Uncomment if necessary, keep tracked NuGet files if applicable
-# packages/
-# NuGet v3's project.json files produces more ignoreable files
 project.lock.json
 project.fragment.lock.json
 artifacts/
 
-# Windows image file caches
+# Archivos generados por NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Archivos generados por la publicación
+.publish/
+PublishOutput/
+
+# Archivos de configuración del sistema operativo
 Thumbs.db
 ehthumbs.db
-
-# Folder config file
 Desktop.ini
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows shortcuts
-*.lnk
+# Archivos de caché del sistema
+*.log
+ProyectoCasoEstudio_G01T/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+.vs/ProyectoCasoEstudio_G01T/v17/.suo
+.vs/ProyectoCasoEstudio_G01T/v17/.suo
+ProyectoCasoEstudio_G01T/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
