@@ -15,5 +15,13 @@ namespace Services
             DataTable datos = ModeloUsuario.CargarUsuario(out string message);
             return datos;
         }
+        public static DataTable cagarTipos() {
+            DataTable datos = ModeloUsuario.cargarTipoUsuarios(out string message);
+            return datos;
+        }
+        public static DataTable cargarSusb() {
+            DataTable datos = ModeloUsuario.cargarSubscripcion(out string message);
+            return datos;
+        }
     }
 }
