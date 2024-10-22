@@ -169,5 +169,11 @@ namespace SistemaProyectoMDB
             FrmTablaPerfiles frmPerfil = new FrmTablaPerfiles();
             OpenChildForm(frmPerfil);
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FrmTablaComentarios frmComentarios = new FrmTablaComentarios();
+            OpenChildForm(frmComentarios);
+        }
     }
 }

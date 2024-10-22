@@ -100,6 +100,7 @@
             button8.TabIndex = 1;
             button8.Text = "Comentarios";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button7
             // 

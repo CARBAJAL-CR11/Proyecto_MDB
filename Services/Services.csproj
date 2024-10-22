@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SerComentario.cs" />
     <Compile Include="SerPerfil.cs" />
     <Compile Include="SerUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

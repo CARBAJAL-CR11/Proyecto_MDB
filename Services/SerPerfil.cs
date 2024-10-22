@@ -12,12 +12,12 @@ namespace Services
     {
         public static DataTable CargarPerfiles()
         {
-            DataTable datos = ModeloPerfiles.CargarPerfiles(out string message);
+            DataTable datos = ModeloPerfil.CargarPerfiles(out string message);
             return datos;
         }
-        public static DataTable cagarUsuarios()
+        public static DataTable cargarUsuarios()
         {
-            DataTable datos = ModeloPerfiles.cargarUsuarios(out string message);
+            DataTable datos = ModeloUsuario.CargarUsuario(out string message);
             return datos;
         }
     }
