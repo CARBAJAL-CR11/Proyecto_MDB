@@ -14,17 +14,6 @@ obj/
 *.log
 *.pdb
 
-# Archivos de Paquetes y dependencias
-packages/
-*.nupkg
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# Archivos generados por NuGet
-*.nupkg
-*.snupkg
-.nuget/
 
 # Archivos generados por la publicación
 .publish/
