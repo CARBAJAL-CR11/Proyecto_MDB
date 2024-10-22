@@ -84,5 +84,50 @@ namespace Model
             message = null;
             return data;
         }
+        public static bool ingresarUsuarios(string nombres,string apellidos,string correo, string clave, string fecha_nac,string estado_cuenta,string codigo_tipo,string codigo_subs,out string message) {
+            DatabaseConnection dbConnection = new DatabaseConnection();
+
+            try
+            {
+                string query = "INSERT INTO usuarios (nombres, apellidos, correo, clave,fechaNacimiento, estadoCuenta, codigoTipoUsuario, codigoSuscripcion) " +
+                               "VALUES (@nombre, @apellido, @correo, @Clave,@fecha, @estado, @codigoT, @codigoS, @)";
+                using (SqlConnection connection = dbConnection.GetConnection())
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@nombre", nombres);
+                    cmd.Parameters.AddWithValue("@apellido", apellidos);
+                    cmd.Parameters.AddWithValue("@correo", correo);
+                    cmd.Parameters.AddWithValue("@Clave", clave);
+                    cmd.Parameters.AddWithValue("@fecha", fecha_nac);
+                    cmd.Parameters.AddWithValue("@estado", estado_cuenta);
+                    cmd.Parameters.AddWithValue("@codigoT", codigo_tipo);
+                    cmd.Parameters.AddWithValue("@codigoS", codigo_subs);
+
+                    connection.Open();
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        message = "Agregado Exitosamente";
+                        return true;
+                    }
+                    else
+                    {
+                        message = "No se insertó ningún registro.";
+                        return false;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = $"Error de SQL: {DatabaseValidations.FormatSqlErrorMessage(ex)}";
+                return false;
+            }
+            catch (Exception ex)
+            {
+                message = $"Error general al insertar el usuario: {ex.Message}";
+                return false;
+            }
+        }
     }
 }
