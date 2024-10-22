@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             btnAgregar = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            DgUsuarios = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)DgUsuarios).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -46,7 +46,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(929, 35);
+            btnAgregar.Location = new Point(961, 32);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(115, 44);
             btnAgregar.TabIndex = 1;
@@ -54,28 +54,30 @@
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
             // 
-            // dataGridView1
+            // DgUsuarios
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(41, 91);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1036, 600);
-            dataGridView1.TabIndex = 2;
+            DgUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgUsuarios.Location = new Point(47, 97);
+            DgUsuarios.Margin = new Padding(3, 4, 3, 4);
+            DgUsuarios.Name = "DgUsuarios";
+            DgUsuarios.RowHeadersWidth = 51;
+            DgUsuarios.Size = new Size(1029, 557);
+            DgUsuarios.TabIndex = 2;
+            DgUsuarios.CellDoubleClick += DgUsuarios_CellDoubleClick;
             // 
             // FrmTablaUsuario
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1113, 715);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(1102, 715);
+            Controls.Add(DgUsuarios);
             Controls.Add(btnAgregar);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmTablaUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmTablaUsuario";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DgUsuarios).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -84,6 +86,6 @@
 
         private Label label1;
         private Button btnAgregar;
-        private DataGridView dataGridView1;
+        private DataGridView DgUsuarios;
     }
 }

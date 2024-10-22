@@ -1,0 +1,183 @@
+﻿namespace SistemaProyectoMDB
+{
+    partial class FrmFormProductora
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            label9 = new Label();
+            label1 = new Label();
+            txtNombreProductora = new TextBox();
+            label2 = new Label();
+            txtDirección = new TextBox();
+            label3 = new Label();
+            txtCorreo = new TextBox();
+            label4 = new Label();
+            mtxtTelefono = new MaskedTextBox();
+            label5 = new Label();
+            btnGuardar = new Button();
+            SuspendLayout();
+            // 
+            // label9
+            // 
+            label9.Image = Properties.Resources.x_regular_24__3_;
+            label9.Location = new Point(644, 9);
+            label9.Name = "label9";
+            label9.Size = new Size(62, 25);
+            label9.TabIndex = 20;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(24, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(260, 25);
+            label1.TabIndex = 19;
+            label1.Text = "Formulario Productoras";
+            // 
+            // txtNombreProductora
+            // 
+            txtNombreProductora.Location = new Point(86, 90);
+            txtNombreProductora.Name = "txtNombreProductora";
+            txtNombreProductora.Size = new Size(180, 23);
+            txtNombreProductora.TabIndex = 22;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F);
+            label2.Location = new Point(24, 90);
+            label2.Name = "label2";
+            label2.Size = new Size(56, 17);
+            label2.TabIndex = 21;
+            label2.Text = "Nombre";
+            // 
+            // txtDirección
+            // 
+            txtDirección.Location = new Point(413, 90);
+            txtDirección.Multiline = true;
+            txtDirección.Name = "txtDirección";
+            txtDirección.Size = new Size(180, 58);
+            txtDirección.TabIndex = 24;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F);
+            label3.Location = new Point(319, 90);
+            label3.Name = "label3";
+            label3.Size = new Size(66, 17);
+            label3.TabIndex = 23;
+            label3.Text = "Dirección";
+            // 
+            // txtCorreo
+            // 
+            txtCorreo.Location = new Point(86, 208);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(180, 23);
+            txtCorreo.TabIndex = 26;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 9F);
+            label4.Location = new Point(24, 208);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 17);
+            label4.TabIndex = 25;
+            label4.Text = "Correo";
+            // 
+            // mtxtTelefono
+            // 
+            mtxtTelefono.Location = new Point(398, 208);
+            mtxtTelefono.Mask = "0000-0000";
+            mtxtTelefono.Name = "mtxtTelefono";
+            mtxtTelefono.Size = new Size(96, 23);
+            mtxtTelefono.TabIndex = 27;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 9F);
+            label5.Location = new Point(319, 208);
+            label5.Name = "label5";
+            label5.Size = new Size(59, 17);
+            label5.TabIndex = 28;
+            label5.Text = "Teléfono";
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.BackColor = Color.FromArgb(88, 167, 57);
+            btnGuardar.FlatStyle = FlatStyle.Popup;
+            btnGuardar.Font = new Font("Century Gothic", 9F);
+            btnGuardar.ForeColor = SystemColors.Control;
+            btnGuardar.Location = new Point(525, 265);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(138, 37);
+            btnGuardar.TabIndex = 29;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = false;
+            // 
+            // FrmFormProductora
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(705, 320);
+            Controls.Add(btnGuardar);
+            Controls.Add(label5);
+            Controls.Add(mtxtTelefono);
+            Controls.Add(txtCorreo);
+            Controls.Add(label4);
+            Controls.Add(txtDirección);
+            Controls.Add(label3);
+            Controls.Add(txtNombreProductora);
+            Controls.Add(label2);
+            Controls.Add(label9);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FrmFormProductora";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FrmFormProductora";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label label9;
+        private Label label1;
+        private TextBox txtNombreProductora;
+        private Label label2;
+        private TextBox txtDirección;
+        private Label label3;
+        private TextBox txtCorreo;
+        private Label label4;
+        private MaskedTextBox mtxtTelefono;
+        private Label label5;
+        private Button btnGuardar;
+    }
+}
