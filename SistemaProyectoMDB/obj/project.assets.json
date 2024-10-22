@@ -159,7 +159,7 @@
       "Controller/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Services": "1.0.0"
+          "Configuration": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Controller.dll": {}
@@ -183,6 +183,7 @@
       "Services/1.0.0": {
         "type": "project",
         "dependencies": {
+          "Controller": "1.0.0",
           "Model": "1.0.0"
         },
         "compile": {

@@ -66,6 +66,7 @@
             dgvSeries.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSeries.Size = new Size(790, 507);
             dgvSeries.TabIndex = 7;
+            dgvSeries.CellClick += dgvSeries_CellClick;
             // 
             // FrmTablaSeries
             // 
@@ -87,6 +88,6 @@
         #endregion
         private Button btnAgregarSerie;
         private Label label1;
-        private DataGridView dgvSeries;
+        public DataGridView dgvSeries;
     }
 }

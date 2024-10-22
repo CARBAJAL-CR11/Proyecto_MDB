@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ControllerComentario.cs" />
+    <Compile Include="ControllerDescripcion.cs" />
     <Compile Include="ControllerPerfil.cs" />
     <Compile Include="ControllerSerie.cs" />
     <Compile Include="ControllerSuscripcion.cs" />

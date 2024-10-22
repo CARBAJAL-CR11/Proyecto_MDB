@@ -34,8 +34,8 @@
             label2 = new Label();
             label4 = new Label();
             dtFechaInicio = new DateTimePicker();
-            dtFechaFin = new Label();
-            dateTimePicker2 = new DateTimePicker();
+            lbla = new Label();
+            dtFechaFin = new DateTimePicker();
             btnGuardar = new Button();
             btnAgregarProductora = new Button();
             txtDescripcion = new TextBox();
@@ -46,6 +46,8 @@
             label6 = new Label();
             txtCodigoSerie = new TextBox();
             label7 = new Label();
+            txtCodigoDescripcion = new TextBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // label9
@@ -103,24 +105,24 @@
             dtFechaInicio.Size = new Size(152, 23);
             dtFechaInicio.TabIndex = 21;
             // 
+            // lbla
+            // 
+            lbla.AutoSize = true;
+            lbla.Font = new Font("Century Gothic", 9F);
+            lbla.Location = new Point(393, 84);
+            lbla.Name = "lbla";
+            lbla.Size = new Size(159, 17);
+            lbla.TabIndex = 24;
+            lbla.Text = "Fecha de final de emisión";
+            // 
             // dtFechaFin
             // 
-            dtFechaFin.AutoSize = true;
-            dtFechaFin.Font = new Font("Century Gothic", 9F);
-            dtFechaFin.Location = new Point(393, 84);
+            dtFechaFin.CustomFormat = "yyyy-MM-dd";
+            dtFechaFin.Format = DateTimePickerFormat.Custom;
+            dtFechaFin.Location = new Point(555, 84);
             dtFechaFin.Name = "dtFechaFin";
-            dtFechaFin.Size = new Size(159, 17);
-            dtFechaFin.TabIndex = 24;
-            dtFechaFin.Text = "Fecha de final de emisión";
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.CustomFormat = "yyyy-MM-dd";
-            dateTimePicker2.Format = DateTimePickerFormat.Custom;
-            dateTimePicker2.Location = new Point(555, 84);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(152, 23);
-            dateTimePicker2.TabIndex = 23;
+            dtFechaFin.Size = new Size(152, 23);
+            dtFechaFin.TabIndex = 23;
             // 
             // btnGuardar
             // 
@@ -221,11 +223,30 @@
             label7.TabIndex = 33;
             label7.Text = "Codigo de la serie";
             // 
+            // txtCodigoDescripcion
+            // 
+            txtCodigoDescripcion.Location = new Point(658, 27);
+            txtCodigoDescripcion.Name = "txtCodigoDescripcion";
+            txtCodigoDescripcion.Size = new Size(128, 23);
+            txtCodigoDescripcion.TabIndex = 36;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 9F);
+            label8.Location = new Point(532, 27);
+            label8.Name = "label8";
+            label8.Size = new Size(125, 17);
+            label8.TabIndex = 35;
+            label8.Text = "Codigo descripción";
+            // 
             // FrmFormSeries
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(967, 360);
+            Controls.Add(txtCodigoDescripcion);
+            Controls.Add(label8);
             Controls.Add(txtCodigoSerie);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -236,8 +257,8 @@
             Controls.Add(txtDescripcion);
             Controls.Add(btnAgregarProductora);
             Controls.Add(btnGuardar);
+            Controls.Add(lbla);
             Controls.Add(dtFechaFin);
-            Controls.Add(dateTimePicker2);
             Controls.Add(label4);
             Controls.Add(dtFechaInicio);
             Controls.Add(txtNombreSerie);
@@ -256,21 +277,23 @@
 
         private Label label9;
         private Label label1;
-        private TextBox txtNombreSerie;
         private Label label2;
         private Label label4;
-        private DateTimePicker dtFechaInicio;
-        private Label dtFechaFin;
-        private DateTimePicker dateTimePicker2;
+        private Label lbla;
         private Button btnGuardar;
         private Button btnAgregarProductora;
-        private TextBox txtDescripcion;
         private Label label3;
         private Label label5;
-        private ComboBox cmbClasificacion;
         private Label label6;
-        private TextBox txtCodigoSerie;
         private Label label7;
         public TextBox txtProductora;
+        private Label label8;
+        public TextBox txtNombreSerie;
+        public DateTimePicker dtFechaInicio;
+        public DateTimePicker dtFechaFin;
+        public TextBox txtDescripcion;
+        public ComboBox cmbClasificacion;
+        public TextBox txtCodigoSerie;
+        public TextBox txtCodigoDescripcion;
     }
 }

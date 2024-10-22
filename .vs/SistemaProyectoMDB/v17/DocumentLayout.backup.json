@@ -3,71 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\",
   "Documents": [
     {
-<<<<<<< Updated upstream
-      "AbsoluteMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\services\\serserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|solutionrelative:services\\serserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmformseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmformseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmformseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmformseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< Updated upstream
-=======
-      "AbsoluteMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\services\\serusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|solutionrelative:services\\serusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmformseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmformseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\services\\serusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|solutionrelative:services\\serusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\services\\serdescripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|solutionrelative:services\\serdescripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\controller\\controllerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|solutionrelative:controller\\controllerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-=======
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaproductoraserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\controller\\controllerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|solutionrelative:controller\\controllerusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
->>>>>>> Stashed changes
-      "AbsoluteMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\controller\\controllerperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|solutionrelative:controller\\controllerperfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\services\\serserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|solutionrelative:services\\serserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\model\\modelodescripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modelodescripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\model\\modeloserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modeloserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\sistemaproyectomdb\\frmtablaseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablaseries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5C37CE5-F48B-4A3A-A35A-21DCDFC34608}|Controller\\Controller.csproj|c:\\users\\user\\documents\\github\\proyecto_mdb\\controller\\controllerserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,25 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 0,
-=======
-          "SelectedChildIndex": 11,
->>>>>>> Stashed changes
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SerSerie.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerSerie.cs",
-              "RelativeDocumentMoniker": "Services\\SerSerie.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerSerie.cs",
-              "RelativeToolTip": "Services\\SerSerie.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wB4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:50:00.915Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -114,120 +62,40 @@
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 4,
-=======
-              "DocumentIndex": 2,
->>>>>>> Stashed changes
-              "Title": "SerUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerUsuario.cs",
-              "RelativeDocumentMoniker": "Services\\SerUsuario.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerUsuario.cs",
-              "RelativeToolTip": "Services\\SerUsuario.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:18:11.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 9,
-=======
-              "DocumentIndex": 8,
->>>>>>> Stashed changes
-              "Title": "ModeloDescripcion.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\ModeloDescripcion.cs",
-              "RelativeDocumentMoniker": "Model\\ModeloDescripcion.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\ModeloDescripcion.cs",
-              "RelativeToolTip": "Model\\ModeloDescripcion.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:11:20.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 8,
-=======
-              "DocumentIndex": 7,
->>>>>>> Stashed changes
-              "Title": "ControllerPerfil.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerPerfil.cs",
-              "RelativeDocumentMoniker": "Controller\\ControllerPerfil.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerPerfil.cs",
-              "RelativeToolTip": "Controller\\ControllerPerfil.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:09:41.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 7,
-=======
-              "DocumentIndex": 6,
->>>>>>> Stashed changes
-              "Title": "ControllerUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerUsuario.cs",
-              "RelativeDocumentMoniker": "Controller\\ControllerUsuario.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerUsuario.cs",
-              "RelativeToolTip": "Controller\\ControllerUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:09:36.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 6,
-=======
-              "DocumentIndex": 5,
->>>>>>> Stashed changes
-              "Title": "FrmTablaProductoraSerie.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaProductoraSerie.cs",
-              "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaProductoraSerie.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaProductoraSerie.cs",
-              "RelativeToolTip": "SistemaProyectoMDB\\FrmTablaProductoraSerie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:59:24.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 5,
-=======
-              "DocumentIndex": 4,
->>>>>>> Stashed changes
-              "Title": "FrmTablaProductoraSerie.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaProductoraSerie.cs",
-              "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaProductoraSerie.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaProductoraSerie.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaProyectoMDB\\FrmTablaProductoraSerie.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:59:20.871Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 2,
-=======
-              "DocumentIndex": 3,
->>>>>>> Stashed changes
+              "DocumentIndex": 0,
               "Title": "FrmTablaSeries.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaSeries.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaSeries.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaSeries.cs",
               "RelativeToolTip": "SistemaProyectoMDB\\FrmTablaSeries.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwFcAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:59:04.083Z",
+              "WhenOpened": "2024-10-22T21:54:11.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmTablaSeries.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaSeries.cs",
+              "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaSeries.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaSeries.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaProyectoMDB\\FrmTablaSeries.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:54:08.082Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ControllerSerie.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerSerie.cs",
+              "RelativeDocumentMoniker": "Controller\\ControllerSerie.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerSerie.cs",
+              "RelativeToolTip": "Controller\\ControllerSerie.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:48:49.176Z",
               "EditorCaption": ""
             },
             {
@@ -236,55 +104,75 @@
               "Title": "FrmFormSeries.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormSeries.cs",
-<<<<<<< Updated upstream
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs",
               "RelativeToolTip": "SistemaProyectoMDB\\FrmFormSeries.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAvwCIAAACrAAAAAAAAAA==",
-=======
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs*",
-              "RelativeToolTip": "SistemaProyectoMDB\\FrmFormSeries.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAnwCIAAACoAAAAAAAAAA==",
->>>>>>> Stashed changes
+              "ViewState": "AgIAAE8AAAAAAAAAAAAlwGEAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:54:09.638Z",
+              "WhenOpened": "2024-10-22T21:25:00.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FrmFormSeries.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormSeries.cs",
               "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs [Dise\u00F1o]",
               "RelativeToolTip": "SistemaProyectoMDB\\FrmFormSeries.cs [Dise\u00F1o]",
-=======
-              "DocumentIndex": 0,
-              "Title": "FrmFormSeries.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs",
-              "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormSeries.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormSeries.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "SistemaProyectoMDB\\FrmFormSeries.cs [Dise\u00F1o]*",
->>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:51:03.168Z",
+              "WhenOpened": "2024-10-22T21:24:58.854Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 10,
-=======
-              "DocumentIndex": 9,
->>>>>>> Stashed changes
-              "Title": "ControllerSerie.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerSerie.cs",
-              "RelativeDocumentMoniker": "Controller\\ControllerSerie.cs",
-              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\ControllerSerie.cs",
-              "RelativeToolTip": "Controller\\ControllerSerie.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SerDescripcion.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerDescripcion.cs",
+              "RelativeDocumentMoniker": "Services\\SerDescripcion.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerDescripcion.cs",
+              "RelativeToolTip": "Services\\SerDescripcion.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:49:17.203Z",
+              "WhenOpened": "2024-10-22T21:23:58.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SerSerie.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerSerie.cs",
+              "RelativeDocumentMoniker": "Services\\SerSerie.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\SerSerie.cs",
+              "RelativeToolTip": "Services\\SerSerie.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAUwDAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:23:13.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModeloDescripcion.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\ModeloDescripcion.cs",
+              "RelativeDocumentMoniker": "Model\\ModeloDescripcion.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\ModeloDescripcion.cs",
+              "RelativeToolTip": "Model\\ModeloDescripcion.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAADwv2EAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:22:00.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModeloSerie.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\ModeloSerie.cs",
+              "RelativeDocumentMoniker": "Model\\ModeloSerie.cs",
+              "ToolTip": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\ModeloSerie.cs",
+              "RelativeToolTip": "Model\\ModeloSerie.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAADwv38AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T21:19:40.906Z",
               "EditorCaption": ""
             }
           ]

@@ -27,8 +27,8 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj"
+              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj"
               }
             }
           }
@@ -65,6 +65,9 @@
         "frameworks": {
           "net48": {
             "projectReferences": {
+              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj"
+              },
               "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj": {
                 "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj"
               }

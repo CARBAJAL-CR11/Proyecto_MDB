@@ -93,3 +93,6 @@ C:\Users\USER\Documents\GitHub\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-
 C:\Users\USER\Documents\GitHub\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.genruntimeconfig.cache
 C:\Users\USER\Documents\GitHub\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\ref\SistemaProyectoMDB.dll
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaSuscripciones.resources
+C:\Users\USER\Documents\GitHub\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\Controller.dll
+C:\Users\USER\Documents\GitHub\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\Controller.pdb
+C:\Users\USER\Documents\GitHub\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaSuscripciones.resources

@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SerComentario.cs" />
+    <Compile Include="SerDescripcion.cs" />
     <Compile Include="SerPerfil.cs" />
     <Compile Include="SerProductora.cs" />
     <Compile Include="SerSerie.cs" />
