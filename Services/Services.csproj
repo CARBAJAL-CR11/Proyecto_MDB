@@ -47,6 +47,7 @@
     <Compile Include="SerComentario.cs" />
     <Compile Include="SerPerfil.cs" />
     <Compile Include="SerSerie.cs" />
+    <Compile Include="SerSuscripcion.cs" />
     <Compile Include="SerUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

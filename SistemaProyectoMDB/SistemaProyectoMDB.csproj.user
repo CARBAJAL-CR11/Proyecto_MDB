@@ -40,6 +40,9 @@
     <Compile Update="FrmTablaSeries.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmTablaSuscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmTablaTemporadaSerie.cs">
       <SubType>Form</SubType>
     </Compile>

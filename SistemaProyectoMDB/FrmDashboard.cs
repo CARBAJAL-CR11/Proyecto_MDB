@@ -176,5 +176,11 @@ namespace SistemaProyectoMDB
             FrmTablaComentarios frmComentarios = new FrmTablaComentarios();
             OpenChildForm(frmComentarios);
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmTablaSuscripciones frmSuscripciones = new FrmTablaSuscripciones();
+            OpenChildForm(frmSuscripciones);
+        }
     }
 }

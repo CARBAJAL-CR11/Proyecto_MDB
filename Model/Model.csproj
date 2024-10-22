@@ -47,6 +47,7 @@
     <Compile Include="ModeloComentario.cs" />
     <Compile Include="ModeloPerfil.cs" />
     <Compile Include="ModeloSerie.cs" />
+    <Compile Include="ModeloSuscripcion.cs" />
     <Compile Include="ModeloUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
