@@ -15,7 +15,7 @@ namespace Configuration
         private const string DefaultServerName = "localhost";
         private const string DefaultDatabase = "dbStreaming";
         private const string DefaultUsername = "sa";
-        private const string DefaultPassword = "123456";
+        private const string DefaultPassword = "anderson123";
         private const string DefaultPort = "1433";
 
         public DatabaseConnection(

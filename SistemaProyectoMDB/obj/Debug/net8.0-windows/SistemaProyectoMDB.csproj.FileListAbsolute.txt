@@ -36,3 +36,9 @@ C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaSeries.resources
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaTemporadaSerie.resources
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaP.B2BF4814.Up2Date
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

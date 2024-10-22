@@ -16,6 +16,7 @@ namespace SistemaProyectoMDB
         public FrmTablaUsuario()
         {
             InitializeComponent();
+            CargarGridDatos();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -38,17 +39,12 @@ namespace SistemaProyectoMDB
                 DataTable datos = ServUsuario.CargarUsuarios();
                 DgUsuarios.DataSource = datos;
                 // Renombrar las columnas en el DataGridView
-                DgUsuarios.Columns["IdUsuario"].HeaderText = "ID";
-                DgUsuarios.Columns["NombreUsuario"].HeaderText = "Nombre de Usuario";
-                DgUsuarios.Columns["Correo"].HeaderText = "Correo Electrónico";
-                DgUsuarios.Columns["FechaNacimiento"].HeaderText = "Fecha de Nacimiento";
-                // Ajustar el ancho de la columna que contiene la foto
-                DgUsuarios.Columns["Foto"].Width = 100;
-                DgUsuarios.Columns["Foto"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                DgUsuarios.Columns["codigoUsuario"].HeaderText = "Codigo";
+                DgUsuarios.Columns["nombres"].HeaderText = "Nombre de Usuario";
+                DgUsuarios.Columns["apellidos"].HeaderText = "Apellidos";
+                DgUsuarios.Columns["fechaNacimiento"].HeaderText = "Fecha de Nacimiento";
                 //
-                DgUsuarios.Columns["Pasaporte"].HeaderText = "Número de Pasaporte";
-                DgUsuarios.Columns["Nivel_Usuario"].HeaderText = "Nivel de Usuario";
-                DgUsuarios.Columns["NombreAgencia"].HeaderText = "Agencia";
+                DgUsuarios.Columns["correo"].HeaderText = "Correo Electronico";
             }
             catch (Exception ex)
             {
