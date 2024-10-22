@@ -69,14 +69,6 @@ CONSTRAINT fkPerfilComentario
 FOREIGN KEY(codigoPerfil) REFERENCES perfiles(codigoPerfil)
 );
 
-CREATE TABLE historiales(
-codigoHistorial CHAR(5) NOT NULL,
-codigoPerfil CHAR(5) NOT NULL,
-CONSTRAINT pkCodigoHistorial PRIMARY KEY(codigoHistorial),
-CONSTRAINT fkPerfilHistorial 
-FOREIGN KEY(codigoPerfil) REFERENCES perfiles(codigoPerfil)
-);
-
 CREATE TABLE categorias(
 codigoCategoria CHAR(5) NOT NULL,
 nombreCategoria VARCHAR(50) NOT NULL,
@@ -111,14 +103,7 @@ CONSTRAINT fkCategoria
 FOREIGN KEY(codigoCategoria) REFERENCES categorias(codigoCategoria)
 );
 
-CREATE TABLE detallesHistoriales(
-codigoHistorial CHAR(5) NOT NULL,
-codigoDescripcion CHAR(5) NOT NULL,
-CONSTRAINT fkHistorialDetalle 
-FOREIGN KEY(codigoHistorial) REFERENCES historiales(codigoHistorial),
-CONSTRAINT fkDescripcionHistorial
-FOREIGN KEY(codigoDescripcion) REFERENCES descripciones(codigoDescripcion)
-);
+
 
 CREATE TABLE detallesComentarios(
 codigoComentario CHAR(5) NOT NULL,
@@ -283,20 +268,6 @@ BEGIN
     DELETE dc
     FROM detallesCategorias dc
     INNER JOIN deleted d ON dc.codigoDescripcion = d.codigoDescripcion;
-END;
-GO
-
--- Trigger 6: Eliminar detalles de historiales al eliminar un historial
-CREATE TRIGGER trg_DeleteDetallesHistorialesOnHistorialDelete
-ON historiales
-AFTER DELETE
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    DELETE dh
-    FROM detallesHistoriales dh
-    INNER JOIN deleted d ON dh.codigoHistorial = d.codigoHistorial;
 END;
 GO
 
@@ -717,37 +688,6 @@ BEGIN
 END;
 GO
 
--- Tabla: historiales
-
-CREATE PROCEDURE PA_InsertarHistorial
-    @codigoHistorial CHAR(5),
-    @codigoPerfil CHAR(5)
-AS
-BEGIN
-    INSERT INTO historiales (codigoHistorial, codigoPerfil)
-    VALUES (@codigoHistorial, @codigoPerfil);
-END;
-GO
-
-CREATE PROCEDURE PA_ActualizarHistorial
-    @codigoHistorial CHAR(5),
-    @codigoPerfil CHAR(5)
-AS
-BEGIN
-    UPDATE historiales
-    SET codigoPerfil = @codigoPerfil
-    WHERE codigoHistorial = @codigoHistorial;
-END;
-GO
-
-CREATE PROCEDURE PA_EliminarHistorial
-    @codigoHistorial CHAR(5)
-AS
-BEGIN
-    DELETE FROM historiales
-    WHERE codigoHistorial = @codigoHistorial;
-END;
-GO
 
 -- Tabla: categorias
 
@@ -884,27 +824,6 @@ BEGIN
 END;
 GO
 
--- Tabla: detallesHistoriales
-
-CREATE PROCEDURE PA_InsertarDetalleHistorial
-    @codigoHistorial CHAR(5),
-    @codigoDescripcion CHAR(5)
-AS
-BEGIN
-    INSERT INTO detallesHistoriales (codigoHistorial, codigoDescripcion)
-    VALUES (@codigoHistorial, @codigoDescripcion);
-END;
-GO
-
-CREATE PROCEDURE PA_EliminarDetalleHistorial
-    @codigoHistorial CHAR(5),
-    @codigoDescripcion CHAR(5)
-AS
-BEGIN
-    DELETE FROM detallesHistoriales
-    WHERE codigoHistorial = @codigoHistorial AND codigoDescripcion = @codigoDescripcion;
-END;
-GO
 
 -- Tabla: detallesComentarios
 
@@ -1294,34 +1213,6 @@ INSERT INTO perfiles (codigoPerfil, nombrePerfil, codigoUsuario) VALUES
 ('PF025', 'Perfil Carlos', 'U0003');
 GO
 
--- Insertar registros en la tabla 'historiales'
-INSERT INTO historiales (codigoHistorial, codigoPerfil) VALUES
-('H0001', 'PF001'),
-('H0002', 'PF002'),
-('H0003', 'PF003'),
-('H0004', 'PF004'),
-('H0005', 'PF005'),
-('H0006', 'PF006'),
-('H0007', 'PF007'),
-('H0008', 'PF008'),
-('H0009', 'PF009'),
-('H0010', 'PF010'),
-('H0011', 'PF011'),
-('H0012', 'PF012'),
-('H0013', 'PF013'),
-('H0014', 'PF014'),
-('H0015', 'PF015'),
-('H0016', 'PF016'),
-('H0017', 'PF017'),
-('H0018', 'PF018'),
-('H0019', 'PF019'),
-('H0020', 'PF020'),
-('H0021', 'PF021'),
-('H0022', 'PF022'),
-('H0023', 'PF023'),
-('H0024', 'PF024'),
-('H0025', 'PF025');
-GO
 
 -- Insertar registros en la tabla 'comentarios'
 INSERT INTO comentarios (codigoComentario, comentario, codigoPerfil) VALUES
@@ -1582,33 +1473,4 @@ INSERT INTO detallesComentarios (codigoComentario, codigoDescripcion) VALUES
 ('CM023', 'D0021'),
 ('CM024', 'D0023'),
 ('CM025', 'D0025');
-GO
-
--- Insertar registros en la tabla 'detallesHistoriales'
-INSERT INTO detallesHistoriales (codigoHistorial, codigoDescripcion) VALUES
-('H0001', 'D0001'),
-('H0002', 'D0002'),
-('H0003', 'D0003'),
-('H0004', 'D0004'),
-('H0005', 'D0005'),
-('H0006', 'D0006'),
-('H0007', 'D0007'),
-('H0008', 'D0008'),
-('H0009', 'D0009'),
-('H0010', 'D0010'),
-('H0011', 'D0011'),
-('H0012', 'D0012'),
-('H0013', 'D0013'),
-('H0014', 'D0014'),
-('H0015', 'D0015'),
-('H0016', 'D0016'),
-('H0017', 'D0017'),
-('H0018', 'D0018'),
-('H0019', 'D0019'),
-('H0020', 'D0020'),
-('H0021', 'D0021'),
-('H0022', 'D0022'),
-('H0023', 'D0023'),
-('H0024', 'D0024'),
-('H0025', 'D0025');
 GO
