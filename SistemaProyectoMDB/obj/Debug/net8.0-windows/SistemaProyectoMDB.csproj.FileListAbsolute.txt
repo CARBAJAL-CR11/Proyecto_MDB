@@ -42,3 +42,7 @@ C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaComentarios.resources
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\obj\Debug\net8.0-windows\SistemaProyectoMDB.FrmTablaPerfiles.resources
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\Controller.dll
+C:\Users\hp\Desktop\MDB-Proyect\Proyecto_MDB\SistemaProyectoMDB\bin\Debug\net8.0-windows\Controller.pdb

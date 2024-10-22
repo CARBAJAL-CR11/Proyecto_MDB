@@ -63,6 +63,7 @@
             DgUsuarios.RowHeadersWidth = 51;
             DgUsuarios.Size = new Size(1029, 557);
             DgUsuarios.TabIndex = 2;
+            DgUsuarios.CellDoubleClick += DgUsuarios_CellDoubleClick;
             // 
             // FrmTablaUsuario
             // 

@@ -51,17 +51,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Services\Services.csproj">
-      <Project>{d0ffbb1f-9a6e-4cd9-bbeb-ad18d63f0781}</Project>
-      <Name>Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SistemaProyectoMDB\SistemaProyectoMDB.csproj">
-      <Project>{085b544e-8524-4cd7-8601-4557896194ff}</Project>
-      <Name>SistemaProyectoMDB</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{c9c073ee-d41d-4f64-96aa-649203779f61}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

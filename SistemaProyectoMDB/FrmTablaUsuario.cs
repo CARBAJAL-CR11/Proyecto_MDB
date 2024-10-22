@@ -51,5 +51,21 @@ namespace SistemaProyectoMDB
                 MessageBox.Show($"Error al cargar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void DgUsuarios_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posicion = DgUsuarios.CurrentRow.Index;
+
+            string Codigo = DgUsuarios[0, posicion].Value.ToString();
+            Form existingForm = Application.OpenForms.OfType<FrmFormUsuarios>().FirstOrDefault();
+
+
+            if (existingForm == null)
+            {
+                FrmFormUsuarios formulario = new FrmFormUsuarios(Codigo);
+                formulario.Show();
+            }
+            else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
     }
 }

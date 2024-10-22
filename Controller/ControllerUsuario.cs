@@ -15,6 +15,11 @@ namespace Controller
         public string nombresUsuario { get; set; }
         public string apellidosUsuario { get; set; }
         public string correoUsuario { get; set; }
+        public string claveUsuario { get; set; }
+        public string fechaNacimiento { get; set; }
+        public string estadoCuenta { get; set; }
+        public string tipoUsuario { get; set; }
+        public string suscripcion { get; set; }
 
     }
 }

@@ -45,6 +45,8 @@
             CmbSubs = new ComboBox();
             BtnGuardar = new Button();
             label9 = new Label();
+            txtCodigo = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -93,7 +95,7 @@
             // 
             DtNacimiento.CustomFormat = "yyyy-MM-dd";
             DtNacimiento.Format = DateTimePickerFormat.Custom;
-            DtNacimiento.Location = new Point(768, 85);
+            DtNacimiento.Location = new Point(184, 161);
             DtNacimiento.Name = "DtNacimiento";
             DtNacimiento.Size = new Size(152, 26);
             DtNacimiento.TabIndex = 5;
@@ -101,7 +103,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(611, 85);
+            label4.Location = new Point(27, 161);
             label4.Name = "label4";
             label4.Size = new Size(151, 20);
             label4.TabIndex = 6;
@@ -109,7 +111,7 @@
             // 
             // TxtCorreo
             // 
-            TxtCorreo.Location = new Point(115, 157);
+            TxtCorreo.Location = new Point(447, 161);
             TxtCorreo.Name = "TxtCorreo";
             TxtCorreo.Size = new Size(180, 26);
             TxtCorreo.TabIndex = 8;
@@ -117,7 +119,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(27, 157);
+            label5.Location = new Point(359, 161);
             label5.Name = "label5";
             label5.Size = new Size(69, 20);
             label5.TabIndex = 7;
@@ -125,7 +127,7 @@
             // 
             // TxtCuenta
             // 
-            TxtCuenta.Location = new Point(409, 157);
+            TxtCuenta.Location = new Point(741, 161);
             TxtCuenta.Name = "TxtCuenta";
             TxtCuenta.Size = new Size(180, 26);
             TxtCuenta.TabIndex = 10;
@@ -133,7 +135,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(321, 157);
+            label6.Location = new Point(653, 161);
             label6.Name = "label6";
             label6.Size = new Size(72, 20);
             label6.TabIndex = 9;
@@ -142,7 +144,7 @@
             // CmbTipos
             // 
             CmbTipos.FormattingEnabled = true;
-            CmbTipos.Location = new Point(729, 157);
+            CmbTipos.Location = new Point(136, 236);
             CmbTipos.Name = "CmbTipos";
             CmbTipos.Size = new Size(191, 28);
             CmbTipos.TabIndex = 11;
@@ -151,7 +153,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(620, 160);
+            label7.Location = new Point(27, 239);
             label7.Name = "label7";
             label7.Size = new Size(103, 20);
             label7.TabIndex = 12;
@@ -160,7 +162,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(27, 223);
+            label8.Location = new Point(359, 239);
             label8.Name = "label8";
             label8.Size = new Size(109, 20);
             label8.TabIndex = 14;
@@ -169,7 +171,7 @@
             // CmbSubs
             // 
             CmbSubs.FormattingEnabled = true;
-            CmbSubs.Location = new Point(143, 220);
+            CmbSubs.Location = new Point(475, 236);
             CmbSubs.Name = "CmbSubs";
             CmbSubs.Size = new Size(191, 28);
             CmbSubs.TabIndex = 13;
@@ -185,6 +187,7 @@
             BtnGuardar.TabIndex = 15;
             BtnGuardar.Text = "Guardar";
             BtnGuardar.UseVisualStyleBackColor = false;
+            BtnGuardar.Click += BtnGuardar_Click;
             // 
             // label9
             // 
@@ -195,11 +198,29 @@
             label9.TabIndex = 16;
             label9.Click += label9_Click;
             // 
+            // txtCodigo
+            // 
+            txtCodigo.Location = new Point(741, 87);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new Size(180, 26);
+            txtCodigo.TabIndex = 18;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(609, 90);
+            label10.Name = "label10";
+            label10.Size = new Size(126, 20);
+            label10.TabIndex = 17;
+            label10.Text = "Codigo Usuario:";
+            // 
             // FrmFormUsuarios
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(983, 399);
+            Controls.Add(txtCodigo);
+            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(BtnGuardar);
             Controls.Add(label8);
@@ -245,5 +266,7 @@
         private ComboBox CmbSubs;
         private Button BtnGuardar;
         private Label label9;
+        private TextBox txtCodigo;
+        private Label label10;
     }
 }

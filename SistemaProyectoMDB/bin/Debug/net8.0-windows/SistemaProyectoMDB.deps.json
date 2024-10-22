@@ -9,6 +9,7 @@
       "SistemaProyectoMDB/1.0.0": {
         "dependencies": {
           "Configuration": "1.0.0",
+          "Controller": "1.0.0",
           "Services": "1.0.0",
           "System.Data.SqlClient": "4.8.6"
         },
@@ -99,6 +100,17 @@
           }
         }
       },
+      "Controller/1.0.0": {
+        "dependencies": {
+          "Configuration": "1.0.0"
+        },
+        "runtime": {
+          "Controller.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Model/1.0.0": {
         "dependencies": {
           "Configuration": "1.0.0"
@@ -112,6 +124,7 @@
       },
       "Services/1.0.0": {
         "dependencies": {
+          "Controller": "1.0.0",
           "Model": "1.0.0"
         },
         "runtime": {
@@ -193,6 +206,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Controller/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
