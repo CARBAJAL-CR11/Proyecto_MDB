@@ -4,6 +4,21 @@
     <Compile Update="FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmFormCapitulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmFormProductora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmFormTemporadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTablaProductora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTablaProductoraSerie.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmFormUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -11,6 +26,15 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmFormSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTablaSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTablaTemporadaSerie.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmTablaUsuario.cs">

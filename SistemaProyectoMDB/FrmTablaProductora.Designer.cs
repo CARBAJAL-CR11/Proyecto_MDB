@@ -1,6 +1,6 @@
 ﻿namespace SistemaProyectoMDB
 {
-    partial class FrmTablaUsuario
+    partial class FrmTablaProductora
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dgvProductoras = new DataGridView();
             label1 = new Label();
             btnAgregar = new Button();
-            DgUsuarios = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)DgUsuarios).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductoras).BeginInit();
             SuspendLayout();
+            // 
+            // dgvProductoras
+            // 
+            dgvProductoras.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProductoras.Location = new Point(37, 66);
+            dgvProductoras.Margin = new Padding(3, 2, 3, 2);
+            dgvProductoras.Name = "dgvProductoras";
+            dgvProductoras.RowHeadersWidth = 51;
+            dgvProductoras.Size = new Size(899, 447);
+            dgvProductoras.TabIndex = 25;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(36, 20);
+            label1.Location = new Point(37, 19);
             label1.Name = "label1";
-            label1.Size = new Size(136, 37);
-            label1.TabIndex = 0;
-            label1.Text = "Usuarios";
+            label1.Size = new Size(191, 37);
+            label1.TabIndex = 24;
+            label1.Text = "Productoras";
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(841, 24);
+            btnAgregar.Location = new Point(835, 23);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(101, 33);
-            btnAgregar.TabIndex = 1;
+            btnAgregar.TabIndex = 26;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click;
             // 
-            // DgUsuarios
-            // 
-            DgUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgUsuarios.Location = new Point(41, 91);
-            DgUsuarios.Name = "DgUsuarios";
-            DgUsuarios.RowHeadersWidth = 51;
-            DgUsuarios.Size = new Size(1036, 600);
-            DgUsuarios.TabIndex = 2;
-            // 
-            // FrmTablaUsuario
+            // FrmTablaProductora
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1113, 715);
-            Controls.Add(DgUsuarios);
+            ClientSize = new Size(974, 536);
             Controls.Add(btnAgregar);
+            Controls.Add(dgvProductoras);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "FrmTablaUsuario";
+            Name = "FrmTablaProductora";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmTablaUsuario";
-            ((System.ComponentModel.ISupportInitialize)DgUsuarios).EndInit();
+            Text = "FrmTablaProductora";
+            ((System.ComponentModel.ISupportInitialize)dgvProductoras).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private DataGridView dgvProductoras;
         private Label label1;
         private Button btnAgregar;
-        private DataGridView DgUsuarios;
     }
 }
