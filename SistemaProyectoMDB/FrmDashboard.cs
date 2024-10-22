@@ -161,7 +161,8 @@ namespace SistemaProyectoMDB
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            FrmTablaSeries frmSerie = new FrmTablaSeries();
+            OpenChildForm(frmSerie);
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -174,6 +175,12 @@ namespace SistemaProyectoMDB
         {
             FrmTablaComentarios frmComentarios = new FrmTablaComentarios();
             OpenChildForm(frmComentarios);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FrmTablaSuscripciones frmSuscripciones = new FrmTablaSuscripciones();
+            OpenChildForm(frmSuscripciones);
         }
     }
 }

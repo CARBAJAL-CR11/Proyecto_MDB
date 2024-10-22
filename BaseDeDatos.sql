@@ -1,5 +1,4 @@
-CREATE DATABASE dbStreaming;
-USE dbStreaming;
+
 
 CREATE TABLE suscripciones(
 codigoSuscripcion CHAR(5) NOT NULL,
@@ -432,6 +431,13 @@ INNER JOIN temporadas t ON s.codigoSerie = t.codigoSerie
 INNER JOIN capitulos c ON t.codigoTemporada = c.codigoTemporada;
 GO
 
+CREATE VIEW vw_Series AS
+SELECT s.codigoSerie,s.nombreSerie,s.fechaEmisionInicio,s.fechaEmisionFin,s.codigoDescripcion,d.descripcion
+FROM series s
+INNER JOIN descripciones d
+ON s.codigoDescripcion=d.codigoDescripcion;
+GO
+
 CREATE VIEW vw_ComentariosDetalles AS
 SELECT 
     com.codigoComentario,
@@ -446,6 +452,33 @@ INNER JOIN usuarios u ON p.codigoUsuario = u.codigoUsuario
 INNER JOIN detallesComentarios dc ON com.codigoComentario = dc.codigoComentario
 INNER JOIN descripciones d ON dc.codigoDescripcion = d.codigoDescripcion;
 GO
+
+-- Crear una vista llamada 'VistaSuscripcionesConUsuarios'
+CREATE VIEW vw_suscripcionesUsuarios AS
+
+-- Seleccionar los campos necesarios de la tabla 'suscripciones' y contar los usuarios
+SELECT 
+    s.codigoSuscripcion,             -- Seleccionamos el código de la suscripción
+    s.nombreSuscripcion,             -- Seleccionamos el nombre de la suscripción
+    s.descripcion,                   -- Seleccionamos la descripción de la suscripción
+    COUNT(u.codigoUsuario) AS cantidadUsuarios  -- Contamos cuántos usuarios tienen esta suscripción
+FROM 
+    suscripciones s                  -- Tabla de suscripciones con alias 's'
+    
+-- Hacemos un LEFT JOIN con la tabla 'usuarios' para incluir todos los registros de 'suscripciones', 
+-- incluso aquellos que no tienen usuarios asociados
+LEFT JOIN 
+    usuarios u 
+ON 
+    s.codigoSuscripcion = u.codigoSuscripcion  -- Unimos las tablas por el campo común 'codigoSuscripcion'
+
+-- Agrupar los resultados por los campos de la tabla 'suscripciones'
+GROUP BY 
+    s.codigoSuscripcion,             -- Agrupamos por el código de la suscripción
+    s.nombreSuscripcion,             -- Agrupamos por el nombre de la suscripción
+    s.descripcion;                   -- Agrupamos por la descripción de la suscripción
+
+
 
 -- Subconsultas
 
