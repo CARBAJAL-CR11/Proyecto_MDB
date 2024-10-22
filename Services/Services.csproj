@@ -49,10 +49,6 @@
       <Project>{bb292508-5e26-4b06-b1d2-53f9a3864204}</Project>
       <Name>Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SistemaProyectoMDB\SistemaProyectoMDB.csproj">
-      <Project>{085b544e-8524-4cd7-8601-4557896194ff}</Project>
-      <Name>SistemaProyectoMDB</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

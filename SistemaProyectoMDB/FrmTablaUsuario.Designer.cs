@@ -38,18 +38,17 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(36, 20);
+            label1.Location = new Point(41, 27);
             label1.Name = "label1";
-            label1.Size = new Size(136, 37);
+            label1.Size = new Size(166, 44);
             label1.TabIndex = 0;
             label1.Text = "Usuarios";
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(841, 24);
-            btnAgregar.Margin = new Padding(3, 2, 3, 2);
+            btnAgregar.Location = new Point(961, 32);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(101, 33);
+            btnAgregar.Size = new Size(115, 44);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -58,22 +57,22 @@
             // DgUsuarios
             // 
             DgUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgUsuarios.Location = new Point(41, 91);
+            DgUsuarios.Location = new Point(47, 97);
+            DgUsuarios.Margin = new Padding(3, 4, 3, 4);
             DgUsuarios.Name = "DgUsuarios";
             DgUsuarios.RowHeadersWidth = 51;
-            DgUsuarios.Size = new Size(1036, 600);
+            DgUsuarios.Size = new Size(1029, 557);
             DgUsuarios.TabIndex = 2;
             // 
             // FrmTablaUsuario
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1113, 715);
+            ClientSize = new Size(1102, 715);
             Controls.Add(DgUsuarios);
             Controls.Add(btnAgregar);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FrmTablaUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmTablaUsuario";

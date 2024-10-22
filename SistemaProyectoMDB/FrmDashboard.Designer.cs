@@ -205,7 +205,7 @@
             PnlContenido.Controls.Add(pictureBox1);
             PnlContenido.Location = new Point(251, 31);
             PnlContenido.Name = "PnlContenido";
-            PnlContenido.Size = new Size(1113, 715);
+            PnlContenido.Size = new Size(1102, 715);
             PnlContenido.TabIndex = 2;
             // 
             // pictureBox1
