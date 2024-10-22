@@ -163,5 +163,11 @@ namespace SistemaProyectoMDB
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FrmTablaPerfiles frmPerfil = new FrmTablaPerfiles();
+            OpenChildForm(frmPerfil);
+        }
     }
 }
