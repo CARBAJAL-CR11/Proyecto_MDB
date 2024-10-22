@@ -159,7 +159,7 @@
       "Controller/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Configuration": "1.0.0"
+          "Services": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Controller.dll": {}
@@ -183,7 +183,6 @@
       "Services/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Controller": "1.0.0",
           "Model": "1.0.0"
         },
         "compile": {
@@ -539,19 +538,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
       "projectName": "SistemaProyectoMDB",
-      "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\obj\\",
+      "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -559,20 +558,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+            "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+              "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj"
+            "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj"
+            "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj"
             }
           }
         }
