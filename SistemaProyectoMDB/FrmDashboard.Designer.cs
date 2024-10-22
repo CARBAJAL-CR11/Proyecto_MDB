@@ -100,6 +100,7 @@
             button8.TabIndex = 1;
             button8.Text = "Comentarios";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button7
             // 
@@ -126,6 +127,7 @@
             button6.TabIndex = 1;
             button6.Text = "Perfiles";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button5
             // 
