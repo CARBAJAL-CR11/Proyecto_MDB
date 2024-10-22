@@ -13,11 +13,7 @@
     ],
     "additionalProbingPaths": [
       "C:\\Users\\USER\\.dotnet\\store\\|arch|\\|tfm|",
-<<<<<<< Updated upstream
-      "C:\\Users\\hp\\.nuget\\packages"
-=======
       "C:\\Users\\USER\\.nuget\\packages"
->>>>>>> Stashed changes
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

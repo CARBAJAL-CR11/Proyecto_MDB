@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModeloComentario.cs" />
+    <Compile Include="ModeloDescripcion.cs" />
     <Compile Include="ModeloPerfil.cs" />
+    <Compile Include="ModeloProductora.cs" />
     <Compile Include="ModeloSerie.cs" />
     <Compile Include="ModeloSuscripcion.cs" />
     <Compile Include="ModeloUsuario.cs" />

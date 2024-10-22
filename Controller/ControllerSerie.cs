@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    internal class ControllerSerie
+    public class ControllerSerie
     {
+        public string codigoSerie { get; set; }
         public string nombreSerie { get; set; }
         public string fechaEmisionInicio { get; set; }
         public string fechaEmisionFin { get; set; }

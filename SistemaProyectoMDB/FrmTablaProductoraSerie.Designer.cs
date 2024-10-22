@@ -30,8 +30,8 @@
         {
             label9 = new Label();
             label1 = new Label();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvProductoras = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvProductoras).BeginInit();
             SuspendLayout();
             // 
             // label9
@@ -41,6 +41,7 @@
             label9.Name = "label9";
             label9.Size = new Size(62, 25);
             label9.TabIndex = 20;
+            label9.Click += label9_Click;
             // 
             // label1
             // 
@@ -52,29 +53,32 @@
             label1.TabIndex = 21;
             label1.Text = "Productoras";
             // 
-            // dataGridView1
+            // dgvProductoras
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 68);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(683, 242);
-            dataGridView1.TabIndex = 22;
+            dgvProductoras.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvProductoras.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProductoras.Location = new Point(29, 80);
+            dgvProductoras.Name = "dgvProductoras";
+            dgvProductoras.ReadOnly = true;
+            dgvProductoras.RowHeadersWidth = 51;
+            dgvProductoras.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProductoras.Size = new Size(673, 225);
+            dgvProductoras.TabIndex = 22;
+            dgvProductoras.CellClick += dgvProductoras_CellClick;
             // 
             // FrmTablaProductoraSerie
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(732, 333);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvProductoras);
             Controls.Add(label1);
             Controls.Add(label9);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmTablaProductoraSerie";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmFormDescripcion";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductoras).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -83,6 +87,6 @@
 
         private Label label9;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvProductoras;
     }
 }

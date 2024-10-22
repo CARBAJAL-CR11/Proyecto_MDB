@@ -44,6 +44,8 @@
             cmbClasificacion = new ComboBox();
             txtProductora = new TextBox();
             label6 = new Label();
+            txtCodigoSerie = new TextBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label9
@@ -53,6 +55,7 @@
             label9.Name = "label9";
             label9.Size = new Size(62, 25);
             label9.TabIndex = 18;
+            label9.Click += label9_Click;
             // 
             // label1
             // 
@@ -131,6 +134,7 @@
             btnGuardar.TabIndex = 25;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnAgregarProductora
             // 
@@ -142,10 +146,10 @@
             btnAgregarProductora.TabIndex = 26;
             btnAgregarProductora.Text = "Agregar productora";
             btnAgregarProductora.UseVisualStyleBackColor = true;
+            btnAgregarProductora.Click += btnAgregarProductora_Click;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Enabled = false;
             txtDescripcion.Location = new Point(558, 146);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
@@ -174,7 +178,9 @@
             // 
             // cmbClasificacion
             // 
+            cmbClasificacion.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbClasificacion.FormattingEnabled = true;
+            cmbClasificacion.Items.AddRange(new object[] { "PG-13", "PG", "G", "R", "TV-14", "TV-MA" });
             cmbClasificacion.Location = new Point(823, 87);
             cmbClasificacion.Name = "cmbClasificacion";
             cmbClasificacion.Size = new Size(100, 23);
@@ -198,11 +204,30 @@
             label6.Text = "idInvisible";
             label6.Visible = false;
             // 
+            // txtCodigoSerie
+            // 
+            txtCodigoSerie.Location = new Point(372, 27);
+            txtCodigoSerie.Name = "txtCodigoSerie";
+            txtCodigoSerie.Size = new Size(128, 23);
+            txtCodigoSerie.TabIndex = 34;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 9F);
+            label7.Location = new Point(246, 27);
+            label7.Name = "label7";
+            label7.Size = new Size(116, 17);
+            label7.TabIndex = 33;
+            label7.Text = "Codigo de la serie";
+            // 
             // FrmFormSeries
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(967, 360);
+            Controls.Add(txtCodigoSerie);
+            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(txtProductora);
             Controls.Add(cmbClasificacion);
@@ -243,7 +268,9 @@
         private Label label3;
         private Label label5;
         private ComboBox cmbClasificacion;
-        private TextBox txtProductora;
         private Label label6;
+        private TextBox txtCodigoSerie;
+        private Label label7;
+        public TextBox txtProductora;
     }
 }
