@@ -28,25 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvSeries = new DataGridView();
             btnAgregarSerie = new Button();
             label1 = new Label();
+            dgvSeries = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvSeries).BeginInit();
             SuspendLayout();
             // 
-            // dgvSeries
-            // 
-            dgvSeries.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSeries.Location = new Point(33, 65);
-            dgvSeries.Margin = new Padding(3, 2, 3, 2);
-            dgvSeries.Name = "dgvSeries";
-            dgvSeries.RowHeadersWidth = 51;
-            dgvSeries.Size = new Size(906, 450);
-            dgvSeries.TabIndex = 5;
-            // 
             // btnAgregarSerie
             // 
-            btnAgregarSerie.Location = new Point(838, 21);
+            btnAgregarSerie.Location = new Point(722, 21);
             btnAgregarSerie.Margin = new Padding(3, 2, 3, 2);
             btnAgregarSerie.Name = "btnAgregarSerie";
             btnAgregarSerie.Size = new Size(101, 33);
@@ -65,11 +55,23 @@
             label1.TabIndex = 3;
             label1.Text = "Series";
             // 
+            // dgvSeries
+            // 
+            dgvSeries.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvSeries.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSeries.Location = new Point(33, 75);
+            dgvSeries.Name = "dgvSeries";
+            dgvSeries.ReadOnly = true;
+            dgvSeries.RowHeadersWidth = 51;
+            dgvSeries.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSeries.Size = new Size(790, 507);
+            dgvSeries.TabIndex = 7;
+            // 
             // FrmTablaSeries
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(974, 536);
+            ClientSize = new Size(856, 594);
             Controls.Add(dgvSeries);
             Controls.Add(btnAgregarSerie);
             Controls.Add(label1);
@@ -83,9 +85,8 @@
         }
 
         #endregion
-
-        private DataGridView dgvSeries;
         private Button btnAgregarSerie;
         private Label label1;
+        private DataGridView dgvSeries;
     }
 }

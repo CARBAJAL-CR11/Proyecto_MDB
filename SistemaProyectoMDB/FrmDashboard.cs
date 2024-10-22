@@ -161,7 +161,8 @@ namespace SistemaProyectoMDB
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            FrmTablaSeries frmSerie = new FrmTablaSeries();
+            OpenChildForm(frmSerie);
         }
 
         private void button6_Click(object sender, EventArgs e)

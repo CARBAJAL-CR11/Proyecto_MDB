@@ -432,6 +432,13 @@ INNER JOIN temporadas t ON s.codigoSerie = t.codigoSerie
 INNER JOIN capitulos c ON t.codigoTemporada = c.codigoTemporada;
 GO
 
+CREATE VIEW vw_Series AS
+SELECT s.codigoSerie,s.nombreSerie,s.fechaEmisionInicio,s.fechaEmisionFin,s.codigoDescripcion,d.descripcion
+FROM series s
+INNER JOIN descripciones d
+ON s.codigoDescripcion=d.codigoDescripcion;
+GO
+
 CREATE VIEW vw_ComentariosDetalles AS
 SELECT 
     com.codigoComentario,
