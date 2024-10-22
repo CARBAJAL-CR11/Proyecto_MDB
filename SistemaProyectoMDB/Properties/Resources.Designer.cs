@@ -73,6 +73,16 @@ namespace SistemaProyectoMDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rb_28976 {
+            get {
+                object obj = ResourceManager.GetObject("rb_28976", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rb_3180 {
             get {
                 object obj = ResourceManager.GetObject("rb_3180", resourceCulture);

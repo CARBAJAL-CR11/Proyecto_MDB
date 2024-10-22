@@ -4,6 +4,59 @@
     "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj": {}
   },
   "projects": {
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj",
+        "projectName": "Configuration",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
     "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +80,14 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+              },
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
