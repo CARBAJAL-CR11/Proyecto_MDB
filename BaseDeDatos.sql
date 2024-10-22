@@ -88,7 +88,7 @@ codigoProductora CHAR(5),
 nombreProductora VARCHAR(100),
 direccionProductora VARCHAR(200),
 correoProductora VARCHAR(100),
-telefonoProductora VARCHAR(10),
+telefonoProductora VARCHAR(15),
 CONSTRAINT pkCodigoProductora PRIMARY KEY(codigoProductora)
 );
 
@@ -788,7 +788,7 @@ CREATE PROCEDURE PA_InsertarProductora
     @nombreProductora VARCHAR(100),
     @direccionProductora VARCHAR(200),
     @correoProductora VARCHAR(100),
-    @telefonoProductora VARCHAR(10)
+    @telefonoProductora VARCHAR(15)
 AS
 BEGIN
     INSERT INTO productoras (codigoProductora, nombreProductora, direccionProductora, correoProductora, telefonoProductora)
@@ -801,7 +801,7 @@ CREATE PROCEDURE PA_ActualizarProductora
     @nombreProductora VARCHAR(100),
     @direccionProductora VARCHAR(200),
     @correoProductora VARCHAR(100),
-    @telefonoProductora VARCHAR(10)
+    @telefonoProductora VARCHAR(15)
 AS
 BEGIN
     UPDATE productoras
