@@ -36,7 +36,9 @@
             BtnSesion = new Button();
             pictureBox1 = new PictureBox();
             linkLabel1 = new LinkLabel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -124,12 +126,25 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Crear una cuenta";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = Properties.Resources.x_regular_24__3_;
+            pictureBox2.Location = new Point(462, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(44, 41);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlText;
             ClientSize = new Size(518, 656);
+            Controls.Add(pictureBox2);
             Controls.Add(linkLabel1);
             Controls.Add(pictureBox1);
             Controls.Add(BtnSesion);
@@ -143,6 +158,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmLogin";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +173,6 @@
         private Button BtnSesion;
         private PictureBox pictureBox1;
         private LinkLabel linkLabel1;
+        private PictureBox pictureBox2;
     }
 }

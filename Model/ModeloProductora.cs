@@ -104,6 +104,48 @@ namespace Model
                 return false;
             }
         }
+        public static bool actualizarProductora(string codigo, string nombres, string direccion, string correo, string telefono, out string message)
+        {
+            DatabaseConnection dbConnection = new DatabaseConnection();
+
+            try
+            {
+                string query = "UPDATE productoras SET codigoProductora=@codigo,nombreProductora=@nombre,direccionProductora=@direccion,correoProductora=@correo,telefonoProductora=@telefono WHERE codigoProductora=@codigo";
+                using (SqlConnection connection = dbConnection.GetConnection())
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@codigo", codigo);
+                    cmd.Parameters.AddWithValue("@nombre", nombres);
+                    cmd.Parameters.AddWithValue("@direccion", direccion);
+                    cmd.Parameters.AddWithValue("@correo", correo);
+                    cmd.Parameters.AddWithValue("@telefono", telefono);
+
+                    connection.Open();
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        message = "Actualizado Exitosamente";
+                        return true;
+                    }
+                    else
+                    {
+                        message = "No se actualizo ningún registro.";
+                        return false;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = $"Error de SQL: {DatabaseValidations.FormatSqlErrorMessage(ex)}";
+                return false;
+            }
+            catch (Exception ex)
+            {
+                message = $"Error general al insertar el usuario: {ex.Message}";
+                return false;
+            }
+        }
         public static bool EliminarProductora(out string message, string codigo)
         {
             DatabaseConnection dbConnection = new DatabaseConnection();

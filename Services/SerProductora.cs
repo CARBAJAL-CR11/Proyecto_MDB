@@ -33,6 +33,18 @@ namespace Services
                 return false;
             }
         }
+        public static bool ActualizarProductora(ControllerProductoras productoras, out string message)
+        {
+            try
+            {
+                return ModeloProductora.actualizarProductora(productoras.codigoProductora, productoras.nombreProductora, productoras.direccionProductora, productoras.correoProductora, productoras.telefonoProductora, out message);
+            }
+            catch (Exception ex)
+            {
+                message = $"Error al registrar el usuario: {ex.Message}";
+                return false;
+            }
+        }
         public static bool EliminarProductora(string codigo, out string message)
         {
             try

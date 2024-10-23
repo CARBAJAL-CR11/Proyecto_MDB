@@ -19,7 +19,7 @@ namespace SistemaProyectoMDB
         public FrmFormProductora(string codigo = null)
         {
             InitializeComponent();
-            txtCodigo.ReadOnly=false;
+            txtCodigo.ReadOnly = false;
             btnEliminar.Visible = false;
             if (codigo != null)
             {
@@ -48,17 +48,35 @@ namespace SistemaProyectoMDB
                     correoProductora = txtCorreo.Text,
                     telefonoProductora = mtxtTelefono.Text
                 };
-                string message;
-                bool isSuccess = SerProductora.AgregarProductora(productoras, out message);
-
-                if (isSuccess)
+                if (codigo_productora != null)
                 {
-                    this.Close();
-                    MessageBox.Show("Productora registrada exitosamente.");
+                    string message;
+                    bool isSuccess = SerProductora.ActualizarProductora(productoras, out message);
+
+                    if (isSuccess)
+                    {
+                        this.Close();
+                        MessageBox.Show("Productora actualizada exitosamente.");
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al actualizar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string message;
+                    bool isSuccess = SerProductora.AgregarProductora(productoras, out message);
+
+                    if (isSuccess)
+                    {
+                        this.Close();
+                        MessageBox.Show("Productora registrada exitosamente.");
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             catch (Exception ex)
@@ -77,7 +95,7 @@ namespace SistemaProyectoMDB
         {
             try
             {
-                DialogResult result = MessageBox.Show("¿ELiminar el usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("¿Desea eLiminar la productora?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
@@ -87,7 +105,7 @@ namespace SistemaProyectoMDB
                     bool isSuccess = SerProductora.EliminarProductora(codigo_productora, out message);
                     if (isSuccess)
                     {
-                        MessageBox.Show("EL usuario fue eliminado", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("La productora fue eliminada", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -99,6 +117,11 @@ namespace SistemaProyectoMDB
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

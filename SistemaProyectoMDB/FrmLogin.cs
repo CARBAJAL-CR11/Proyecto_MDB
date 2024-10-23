@@ -44,7 +44,12 @@ namespace SistemaProyectoMDB
             {
                 MessageBox.Show("Correo o contraseña incorrecta, vuelva a intetar", "Usuario no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
