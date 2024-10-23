@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,9 +33,17 @@ namespace SistemaProyectoMDB
 
         private void BtnSesion_Click(object sender, EventArgs e)
         {
-            FrmDashboard dash = new FrmDashboard();
-            this.Hide();
-            dash.ShowDialog();
+
+            if (ServUsuario.logIn(txtCorreo.Text, txtClave.Text) >= 2)
+            {
+                FrmDashboard dash = new FrmDashboard();
+                this.Hide();
+                dash.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Correo o contraseña incorrecta, vuelva a intetar", "Usuario no encontrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
         }
     }

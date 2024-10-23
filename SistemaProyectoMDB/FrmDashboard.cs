@@ -47,9 +47,13 @@ namespace SistemaProyectoMDB
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
-            FrmLogin login = new FrmLogin();
-            this.Close();
-            login.Show();
+            DialogResult msg = MessageBox.Show("¿Desea cerrar sesión?", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg.Equals(DialogResult.Yes))
+            {
+                FrmLogin login = new FrmLogin();
+                this.Close();
+                login.Show();
+            }
         }
         private void OpenChildForm(Form childForm)
         {

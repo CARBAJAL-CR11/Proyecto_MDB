@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtCorreo = new TextBox();
+            txtClave = new TextBox();
             label3 = new Label();
             BtnSesion = new Button();
             pictureBox1 = new PictureBox();
@@ -57,26 +57,26 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(107, 291);
+            label2.Location = new Point(102, 301);
             label2.Name = "label2";
-            label2.Size = new Size(106, 27);
+            label2.Size = new Size(89, 27);
             label2.TabIndex = 1;
-            label2.Text = "Usuario :";
+            label2.Text = "Correo";
             // 
-            // textBox1
+            // txtCorreo
             // 
-            textBox1.Location = new Point(107, 332);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(305, 27);
-            textBox1.TabIndex = 2;
+            txtCorreo.Location = new Point(107, 332);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(305, 27);
+            txtCorreo.TabIndex = 2;
             // 
-            // textBox2
+            // txtClave
             // 
-            textBox2.Location = new Point(107, 447);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(305, 27);
-            textBox2.TabIndex = 4;
+            txtClave.Location = new Point(107, 447);
+            txtClave.Name = "txtClave";
+            txtClave.PasswordChar = '*';
+            txtClave.Size = new Size(305, 27);
+            txtClave.TabIndex = 4;
             // 
             // label3
             // 
@@ -84,11 +84,11 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(107, 402);
+            label3.Location = new Point(102, 417);
             label3.Name = "label3";
-            label3.Size = new Size(154, 27);
+            label3.Size = new Size(142, 27);
             label3.TabIndex = 3;
-            label3.Text = "Contraseña :";
+            label3.Text = "Contraseña";
             // 
             // BtnSesion
             // 
@@ -133,9 +133,9 @@
             Controls.Add(linkLabel1);
             Controls.Add(pictureBox1);
             Controls.Add(BtnSesion);
-            Controls.Add(textBox2);
+            Controls.Add(txtClave);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtCorreo);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
@@ -151,8 +151,8 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtCorreo;
+        private TextBox txtClave;
         private Label label3;
         private Button BtnSesion;
         private PictureBox pictureBox1;
