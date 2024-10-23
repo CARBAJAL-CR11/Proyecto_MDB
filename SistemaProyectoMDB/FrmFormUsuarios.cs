@@ -107,8 +107,10 @@ namespace SistemaProyectoMDB
 
                     if (isSuccess)
                     {
-                        this.Close();
                         MessageBox.Show("Usuario actualizado exitosamente.");
+                        FrmTablaUsuario frmTablaUsuario = Owner as FrmTablaUsuario;
+                        frmTablaUsuario.CargarGridDatosUsuarios();
+                        this.Close();
                     }
                     else
                     {
@@ -122,8 +124,10 @@ namespace SistemaProyectoMDB
 
                     if (isSuccess)
                     {
-                        this.Close();
                         MessageBox.Show("Usuario registrado exitosamente.");
+                        FrmTablaUsuario frmTablaUsuario = Owner as FrmTablaUsuario;
+                        frmTablaUsuario.CargarGridDatosUsuarios();
+                        this.Close();
                     }
                     else
                     {
@@ -152,12 +156,15 @@ namespace SistemaProyectoMDB
                     if (isSuccess)
                     {
                         MessageBox.Show("EL usuario fue eliminado", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmTablaUsuario frmTablaUsuario = Owner as FrmTablaUsuario;
+                        frmTablaUsuario.CargarGridDatosUsuarios();
+                        this.Close();
                     }
                     else
                     {
                         MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
-                }
+                } 
             }
             catch (Exception ex)
             {

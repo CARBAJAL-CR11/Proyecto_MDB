@@ -16,7 +16,7 @@ namespace SistemaProyectoMDB
         public FrmTablaUsuario()
         {
             InitializeComponent();
-            CargarGridDatos();
+            CargarGridDatosUsuarios();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -28,11 +28,12 @@ namespace SistemaProyectoMDB
             if (existingForm == null)
             {
                 FrmFormUsuarios formulario = new FrmFormUsuarios();
-                formulario.Show();
+                AddOwnedForm(formulario);
+                formulario.Show();  
             }
             else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
-        void CargarGridDatos()
+        public void CargarGridDatosUsuarios()
         {
             try
             {
@@ -63,6 +64,7 @@ namespace SistemaProyectoMDB
             if (existingForm == null)
             {
                 FrmFormUsuarios formulario = new FrmFormUsuarios(Codigo);
+                AddOwnedForm(formulario);
                 formulario.Show();
             }
             else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
