@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj": {}
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj",
         "projectName": "Configuration",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,16 +19,16 @@
         "net48": {}
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj": {
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
               }
             }
           }
@@ -38,16 +38,16 @@
         "net48": {}
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj": {
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
               }
             }
           }
@@ -57,19 +57,19 @@
         "net48": {}
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj": {
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Model\\Model.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\Model.csproj"
               }
             }
           }
@@ -79,17 +79,17 @@
         "net48": {}
       }
     },
-    "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj": {
+    "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
         "projectName": "SistemaProyectoMDB",
-        "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\SistemaProyectoMDB\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,21 +97,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Controller\\Controller.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj"
               },
-              "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\USER\\Documents\\GitHub\\Proyecto_MDB\\Services\\Services.csproj"
+              "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj"
               }
             }
           }
