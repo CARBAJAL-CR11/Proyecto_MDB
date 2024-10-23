@@ -14,7 +14,7 @@ namespace SistemaProyectoMDB
 {
     public partial class FrmFormUsuarios : Form
     {
-        private bool option = false;
+        private string codigo_usuario;
         public FrmFormUsuarios(string codigo = null)
         {
             InitializeComponent();
@@ -25,8 +25,9 @@ namespace SistemaProyectoMDB
             {
                 DataTable datos = ServUsuario.cargarUnUsuario(codigo);
                 DataRow row = datos.Rows[0];
-                option = true;
+                codigo_usuario = codigo;
                 BtnELiminar.Visible = true;
+                txtCodigo.ReadOnly = true;
                 TxtNombres.Text = row["nombres"].ToString();
                 TxtApellidos.Text = row["apellidos"].ToString();
                 TxtCorreo.Text = row["correo"].ToString();
@@ -99,7 +100,7 @@ namespace SistemaProyectoMDB
                     tipoUsuario = CmbTipos.SelectedValue.ToString(),
                     suscripcion = CmbSubs.SelectedValue.ToString()
                 };
-                if (option == true)
+                if (codigo_usuario !=null)
                 {
                     string message;
                     bool isSuccess = ServUsuario.ActualizarUsuario(usuario, out message);

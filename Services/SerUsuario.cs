@@ -49,5 +49,16 @@ namespace Services
                 return false;
             }
         }
+        public static bool EliminarUsuario(string codigo, out string message) {
+            try
+            {
+                return ModeloUsuario.EliminarUsuarios(out message,codigo);
+            }
+            catch (Exception ex)
+            {
+                message = $"Error al registrar el jugador: {ex.Message}";
+                return false;
+            }
+        }
     }
 }
