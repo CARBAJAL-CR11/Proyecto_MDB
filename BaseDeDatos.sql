@@ -237,6 +237,25 @@ BEGIN
 END;
 GO
 
+-- Trigger Actualizar el estado de la cuenta a 'Inactivo' cuando un usuario elimina su suscripción
+CREATE TRIGGER trg_UpdateEstadoCuentaOnSuscripcionDelete
+ON usuarios
+AFTER UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF UPDATE(codigoSuscripcion)
+    BEGIN
+        UPDATE u
+        SET estadoCuenta = 'Inactivo'
+        FROM usuarios u
+        INNER JOIN inserted i ON u.codigoUsuario = i.codigoUsuario
+        WHERE i.codigoSuscripcion IS NULL;
+    END
+END;
+GO
+
 
 
 -- Procedimiento almacenado para insertar un Usuario
