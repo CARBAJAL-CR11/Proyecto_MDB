@@ -539,19 +539,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\ferna\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
+      "projectUniqueName": "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
       "projectName": "SistemaProyectoMDB",
-      "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\obj\\",
+      "projectPath": "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\SistemaProyectoMDB\\SistemaProyectoMDB.csproj",
+      "packagesPath": "C:\\Users\\ferna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\SistemaProyectoMDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ferna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -565,14 +565,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Configuration\\Configuration.csproj"
+            "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\Configuration\\Configuration.csproj": {
+              "projectPath": "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\Configuration\\Configuration.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\Controller.csproj"
+            "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\Controller\\Controller.csproj": {
+              "projectPath": "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\Controller\\Controller.csproj"
             },
-            "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\Services.csproj"
+            "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\ferna\\source\\repos\\POO\\Proyecto_MDB\\Services\\Services.csproj"
             }
           }
         }
@@ -581,11 +581,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -616,7 +611,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
