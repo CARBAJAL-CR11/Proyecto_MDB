@@ -77,6 +77,7 @@
             Name = "FrmTablaUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmTablaUsuario";
+            Load += FrmTablaUsuario_Load;
             ((System.ComponentModel.ISupportInitialize)DgUsuarios).EndInit();
             ResumeLayout(false);
             PerformLayout();

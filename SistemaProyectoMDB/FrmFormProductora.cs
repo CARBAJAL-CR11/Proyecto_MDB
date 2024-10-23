@@ -112,6 +112,8 @@ namespace SistemaProyectoMDB
                     if (isSuccess)
                     {
                         MessageBox.Show("La productora fue eliminada", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FrmTablaProductora tablaproductora = Owner as FrmTablaProductora;
+                        tablaproductora.CargarGridDatos();
                     }
                     else
                     {

@@ -29,7 +29,7 @@ namespace SistemaProyectoMDB
             {
                 FrmFormUsuarios formulario = new FrmFormUsuarios();
                 AddOwnedForm(formulario);
-                formulario.Show();  
+                formulario.Show();
             }
             else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
@@ -68,6 +68,11 @@ namespace SistemaProyectoMDB
                 formulario.Show();
             }
             else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+
+        private void FrmTablaUsuario_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaProyectoMDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+728f9ff71f07cb03cd3e31e3446c9218e8cd3126")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6d8ae6b3c474eb34f516de73c75aa80462964cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaProyectoMDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaProyectoMDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
