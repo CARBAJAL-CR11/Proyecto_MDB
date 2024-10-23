@@ -11,10 +11,6 @@
       "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmformusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\hp\\desktop\\mdb-proyect\\proyecto_mdb\\sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\model\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\sistemaproyectomdb\\frmtablaperfiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "FrmTablaUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaUsuario.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaUsuario.cs",
@@ -81,7 +81,7 @@
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormUsuarios.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormUsuarios.cs*",
               "RelativeToolTip": "SistemaProyectoMDB\\FrmFormUsuarios.cs*",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAswHIAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T05:29:18.226Z",
               "EditorCaption": ""
@@ -96,7 +96,8 @@
               "RelativeToolTip": "Controller\\ControllerUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:36:43.757Z"
+              "WhenOpened": "2024-10-22T17:36:43.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -108,7 +109,8 @@
               "RelativeToolTip": "Controller\\ControllerPerfil.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:36:41.64Z"
+              "WhenOpened": "2024-10-22T17:36:41.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,37 +122,38 @@
               "RelativeToolTip": "Configuration\\DatabaseValidations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:35:44.773Z"
+              "WhenOpened": "2024-10-22T17:35:44.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "SerUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerUsuario.cs",
               "RelativeDocumentMoniker": "Services\\SerUsuario.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerUsuario.cs*",
-              "RelativeToolTip": "Services\\SerUsuario.cs*",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCQAAABJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerUsuario.cs",
+              "RelativeToolTip": "Services\\SerUsuario.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA5wDYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T05:22:53.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ModeloUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloUsuario.cs",
               "RelativeDocumentMoniker": "Model\\ModeloUsuario.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloUsuario.cs*",
-              "RelativeToolTip": "Model\\ModeloUsuario.cs*",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAwwLkAAAAVAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloUsuario.cs",
+              "RelativeToolTip": "Model\\ModeloUsuario.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAwwMsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T03:19:49.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FrmTablaUsuario.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaUsuario.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaUsuario.cs",

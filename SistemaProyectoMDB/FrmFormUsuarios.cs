@@ -14,7 +14,7 @@ namespace SistemaProyectoMDB
 {
     public partial class FrmFormUsuarios : Form
     {
-        private bool option = false;
+        private string codigo_usuario;
         public FrmFormUsuarios(string codigo = null)
         {
             InitializeComponent();
@@ -25,8 +25,9 @@ namespace SistemaProyectoMDB
             {
                 DataTable datos = ServUsuario.cargarUnUsuario(codigo);
                 DataRow row = datos.Rows[0];
-                option = true;
+                codigo_usuario = codigo;
                 BtnELiminar.Visible = true;
+                txtCodigo.ReadOnly = true;
                 TxtNombres.Text = row["nombres"].ToString();
                 TxtApellidos.Text = row["apellidos"].ToString();
                 TxtCorreo.Text = row["correo"].ToString();
@@ -99,7 +100,7 @@ namespace SistemaProyectoMDB
                     tipoUsuario = CmbTipos.SelectedValue.ToString(),
                     suscripcion = CmbSubs.SelectedValue.ToString()
                 };
-                if (option == true)
+                if (codigo_usuario !=null)
                 {
                     string message;
                     bool isSuccess = ServUsuario.ActualizarUsuario(usuario, out message);
@@ -138,7 +139,30 @@ namespace SistemaProyectoMDB
 
         private void BtnELiminar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DialogResult result = MessageBox.Show("¿ELiminar el usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+                if (result == DialogResult.Yes)
+                {
+                    /*CtrJugador jugador = new CtrJugador();
+                    jugador.IdJugador = CtrJugador._idJugador;*/
+                    string message;
+                    bool isSuccess = ServUsuario.EliminarUsuario(codigo_usuario,out message);
+                    if (isSuccess)
+                    {
+                        MessageBox.Show("EL usuario fue eliminado", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

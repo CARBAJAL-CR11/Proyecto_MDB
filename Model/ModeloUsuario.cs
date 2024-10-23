@@ -200,5 +200,36 @@ namespace Model
                 return false;
             }
         }
+        public static bool EliminarUsuarios(out string message, string codigo) {
+            DatabaseConnection dbConnection = new DatabaseConnection();
+
+            try
+            {
+                string query = "DELETE FROM usuarios WHERE codigoUsuario=@codigo";
+                using (SqlConnection connection = dbConnection.GetConnection())
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@codigo",  codigo);
+                    connection.Open();
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        message = "Eliminado Exitosamente";
+                        return true;
+                    }
+                    else
+                    {
+                        message = "No se Elimino ningún registro.";
+                        return false;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = $"Error de SQL: {DatabaseValidations.FormatSqlErrorMessage(ex)}";
+                return false;
+            }
+        }
     }
 }
