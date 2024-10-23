@@ -60,5 +60,10 @@ namespace Services
                 return false;
             }
         }
+
+        public static int logIn(string correo, string clave)
+        {
+            return ModeloUsuario.logIn(correo,clave);
+        }
     }
 }

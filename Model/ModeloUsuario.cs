@@ -231,5 +231,37 @@ namespace Model
                 return false;
             }
         }
+
+        public static int logIn(string correo, string clave)
+        {
+            DatabaseConnection connection = new DatabaseConnection();            
+            string estado = "Activo";
+            try
+            {
+                string queryCorreo = "SELECT codigoUsuario FROM usuarios WHERE correo = @correo AND estadoCuenta = @estado";
+                using (SqlConnection conn = connection.GetConnection())
+                using (SqlCommand cmd = new SqlCommand(queryCorreo, conn))
+                {
+                    cmd.Parameters.AddWithValue("@correo", correo);
+                    cmd.Parameters.AddWithValue("@estado", estado);
+                    conn.Open();
+                    var codigoUsuarioCorreo = cmd.ExecuteScalar();
+                    if (codigoUsuarioCorreo == null) return 0;
+                    else
+                    {
+                        string queryClave = "SELECT codigoUsuario FROM usuarios WHERE clave = @clave AND estadoCuenta = @estado";
+                        SqlCommand cmd2 = new SqlCommand(queryClave, conn);
+
+                        cmd2.Parameters.AddWithValue("@clave", clave);
+                        cmd2.Parameters.AddWithValue("@estado", estado);
+
+                        var codigoUsuarioClave = cmd2.ExecuteScalar();
+                        if (codigoUsuarioCorreo.Equals(codigoUsuarioClave)) return 2;                       
+                        return 1;
+                    }
+                }
+            }
+            catch (SqlException ex) { return -1; }
+        }
     }
 }
