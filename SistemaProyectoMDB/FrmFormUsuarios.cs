@@ -139,7 +139,30 @@ namespace SistemaProyectoMDB
 
         private void BtnELiminar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                DialogResult result = MessageBox.Show("¿ELiminar el usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+                if (result == DialogResult.Yes)
+                {
+                    /*CtrJugador jugador = new CtrJugador();
+                    jugador.IdJugador = CtrJugador._idJugador;*/
+                    string message;
+                    bool isSuccess = ServUsuario.EliminarUsuario(codigo_usuario,out message);
+                    if (isSuccess)
+                    {
+                        MessageBox.Show("EL usuario fue eliminado", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
