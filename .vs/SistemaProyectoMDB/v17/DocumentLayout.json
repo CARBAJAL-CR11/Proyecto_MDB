@@ -81,7 +81,7 @@
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormUsuarios.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormUsuarios.cs",
               "RelativeToolTip": "SistemaProyectoMDB\\FrmFormUsuarios.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAcwI0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwJcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T05:29:18.226Z",
               "EditorCaption": ""
@@ -96,7 +96,8 @@
               "RelativeToolTip": "Controller\\ControllerUsuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:36:43.757Z"
+              "WhenOpened": "2024-10-22T17:36:43.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -108,7 +109,8 @@
               "RelativeToolTip": "Controller\\ControllerPerfil.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:36:41.64Z"
+              "WhenOpened": "2024-10-22T17:36:41.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -120,7 +122,8 @@
               "RelativeToolTip": "Configuration\\DatabaseValidations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:35:44.773Z"
+              "WhenOpened": "2024-10-22T17:35:44.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
