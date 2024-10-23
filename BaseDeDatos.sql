@@ -1,4 +1,5 @@
-
+CREATE DATABASE dbStreaming;
+USE dbStreaming;
 
 CREATE TABLE suscripciones(
 codigoSuscripcion CHAR(5) NOT NULL,
@@ -35,9 +36,13 @@ codigoSuscripcion CHAR(5) NOT NULL,
 CONSTRAINT pkCodigoUsuario
 PRIMARY KEY(codigoUsuario),
 CONSTRAINT fkTipoUsuario
-FOREIGN KEY(codigoTipoUsuario) REFERENCES tiposUsuarios(codigoTipoUsuario),
+FOREIGN KEY(codigoTipoUsuario) REFERENCES tiposUsuarios(codigoTipoUsuario)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
 CONSTRAINT fkSuscripcion
 FOREIGN KEY(codigoSuscripcion) REFERENCES suscripciones(codigoSuscripcion)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE detallesFacturas(
@@ -45,9 +50,13 @@ codigoFactura CHAR(5) NOT NULL,
 codigoUsuario CHAR(5) NOT NULL,
 subtotal money NOT NULL,
 CONSTRAINT fkFacturaDetalle 
-FOREIGN KEY(codigoFactura) REFERENCES facturas(codigoFactura),
+FOREIGN KEY(codigoFactura) REFERENCES facturas(codigoFactura)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
 CONSTRAINT fkUsuarioDetalle
 FOREIGN KEY(codigoUsuario) REFERENCES usuarios(codigoUsuario)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE perfiles(
@@ -57,6 +66,8 @@ codigoUsuario CHAR(5) NOT NULL,
 CONSTRAINT pkCodigoPerfil PRIMARY KEY(codigoPerfil),
 CONSTRAINT fkUsuarioPerfil 
 FOREIGN KEY(codigoUsuario) REFERENCES usuarios(codigoUsuario) 
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE comentarios(
@@ -66,6 +77,8 @@ codigoPerfil CHAR(5) NOT NULL,
 CONSTRAINT pkCodigoComentario PRIMARY KEY(codigoComentario),
 CONSTRAINT fkPerfilComentario
 FOREIGN KEY(codigoPerfil) REFERENCES perfiles(codigoPerfil)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE categorias(
@@ -91,15 +104,21 @@ codigoProductora CHAR(5) NOT NULL,
 CONSTRAINT pkCodigoDescripcion PRIMARY KEY(codigoDescripcion),
 CONSTRAINT fkProductora 
 FOREIGN KEY(codigoProductora) REFERENCES productoras(codigoProductora)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE detallesCategorias(
 codigoDescripcion CHAR(5) NOT NULL,
 codigoCategoria CHAR(5) NOT NULL,
 CONSTRAINT fkDescripcionCategoria 
-FOREIGN KEY(codigoDescripcion) REFERENCES descripciones(codigoDescripcion),
+FOREIGN KEY(codigoDescripcion) REFERENCES descripciones(codigoDescripcion)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
 CONSTRAINT fkCategoria 
 FOREIGN KEY(codigoCategoria) REFERENCES categorias(codigoCategoria)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 
@@ -108,9 +127,13 @@ CREATE TABLE detallesComentarios(
 codigoComentario CHAR(5) NOT NULL,
 codigoDescripcion CHAR(5) NOT NULL,
 CONSTRAINT fkComentarioDetalle
-FOREIGN KEY(codigoComentario) REFERENCES comentarios(codigoComentario),
+FOREIGN KEY(codigoComentario) REFERENCES comentarios(codigoComentario)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
 CONSTRAINT fkDescripcionComentario 
 FOREIGN KEY(codigoDescripcion) REFERENCES descripciones(codigoDescripcion)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE peliculas(
@@ -122,6 +145,8 @@ duracion TIME NOT NULL,
 CONSTRAINT pkCodigoPelicula PRIMARY KEY(codigoPelicula),
 CONSTRAINT fkDescripcionPelicula
 FOREIGN KEY(codigoDescripcion) REFERENCES descripciones(codigoDescripcion)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 
@@ -134,6 +159,8 @@ codigoDescripcion CHAR(5) NOT NULL,
 CONSTRAINT pkCodigoSerie PRIMARY KEY(codigoSerie),
 CONSTRAINT fkDescripcionSerie 
 FOREIGN KEY(codigoDescripcion) REFERENCES descripciones(codigoDescripcion)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE temporadas(
@@ -145,6 +172,8 @@ fechaEmisionFin DATE NOT NULL,
 CONSTRAINT pkCodigoTemporada PRIMARY KEY(codigoTemporada),
 CONSTRAINT fkSerieTemporada 
 FOREIGN KEY(codigoSerie) REFERENCES series(codigoSerie)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 
 CREATE TABLE capitulos(
@@ -154,6 +183,8 @@ nombreCapitulo VARCHAR(100) NOT NULL,
 CONSTRAINT pkCodigoCapitulo PRIMARY KEY(codigoCapitulo),
 CONSTRAINT fkTemporadaCapitulo
 FOREIGN KEY(codigoTemporada) REFERENCES temporadas(codigoTemporada)
+ON UPDATE CASCADE
+ON DELETE CASCADE
 );
 GO
 
@@ -179,7 +210,7 @@ BEGIN
 END;
 GO
 
--- Trigger 2: Actualizar el total de la factura cuando se insertan, actualizan o eliminan detalles
+-- Trigger. Actualizar el total de la factura cuando se insertan, actualizan o eliminan detalles
 CREATE TRIGGER trg_UpdateFacturaTotal
 ON detallesFacturas
 AFTER INSERT, UPDATE, DELETE
@@ -206,113 +237,6 @@ BEGIN
 END;
 GO
 
--- Trigger 3: Prevenir la eliminación de usuarios con perfiles asociados
-CREATE TRIGGER trg_PreventDeleteUsuarioWithPerfiles
-ON usuarios
-INSTEAD OF DELETE
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    IF EXISTS (
-        SELECT 1
-        FROM deleted d
-        INNER JOIN perfiles p ON d.codigoUsuario = p.codigoUsuario
-    )
-    BEGIN
-        RAISERROR('No se puede eliminar el usuario porque tiene perfiles asociados.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-    ELSE
-    BEGIN
-        DELETE FROM usuarios
-        WHERE codigoUsuario IN (SELECT codigoUsuario FROM deleted);
-    END
-END;
-GO
-
--- Trigger 4: Prevenir la eliminación de productoras con descripciones asociadas
-CREATE TRIGGER trg_PreventDeleteProductoraWithDescripciones
-ON productoras
-INSTEAD OF DELETE
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    IF EXISTS (
-        SELECT 1
-        FROM deleted d
-        INNER JOIN descripciones des ON d.codigoProductora = des.codigoProductora
-    )
-    BEGIN
-        RAISERROR('No se puede eliminar la productora porque tiene descripciones asociadas.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-    ELSE
-    BEGIN
-        DELETE FROM productoras
-        WHERE codigoProductora IN (SELECT codigoProductora FROM deleted);
-    END
-END;
-GO
-
--- Trigger 5: Eliminar detalles de categorías al eliminar una descripción
-CREATE TRIGGER trg_DeleteDetallesCategoriasOnDescripcionDelete
-ON descripciones
-AFTER DELETE
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    DELETE dc
-    FROM detallesCategorias dc
-    INNER JOIN deleted d ON dc.codigoDescripcion = d.codigoDescripcion;
-END;
-GO
-
--- Trigger 7: Prevenir la inserción de películas con fecha de emisión futura
-CREATE TRIGGER trg_PreventFutureFechaEmisionPelicula
-ON peliculas
-INSTEAD OF INSERT
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    IF EXISTS (SELECT 1 FROM inserted WHERE fechaEmision > GETDATE())
-    BEGIN
-        RAISERROR('No se puede insertar una película con fecha de emisión en el futuro.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-    ELSE
-    BEGIN
-        INSERT INTO peliculas (codigoPelicula, nombrePelicula, codigoDescripcion, fechaEmision, duracion)
-        SELECT codigoPelicula, nombrePelicula, codigoDescripcion, fechaEmision, duracion
-        FROM inserted;
-    END
-END;
-GO
-
--- Trigger 8: Prevenir la inserción de usuarios con fecha de nacimiento futura
-CREATE TRIGGER trg_PreventFutureFechaNacimientoUsuario
-ON usuarios
-INSTEAD OF INSERT
-AS
-BEGIN
-    SET NOCOUNT ON;
-
-    IF EXISTS (SELECT 1 FROM inserted WHERE fechaNacimiento > GETDATE())
-    BEGIN
-        RAISERROR('No se puede insertar un usuario con fecha de nacimiento en el futuro.', 16, 1);
-        ROLLBACK TRANSACTION;
-    END
-    ELSE
-    BEGIN
-        INSERT INTO usuarios (codigoUsuario, nombres, apellidos, correo, clave, fechaNacimiento, estadoCuenta, codigoTipoUsuario, codigoSuscripcion)
-        SELECT codigoUsuario, nombres, apellidos, correo, clave, fechaNacimiento, estadoCuenta, codigoTipoUsuario, codigoSuscripcion
-        FROM inserted;
-    END
-END;
-GO
 
 
 -- Procedimiento almacenado para insertar un Usuario
@@ -431,15 +355,6 @@ INNER JOIN temporadas t ON s.codigoSerie = t.codigoSerie
 INNER JOIN capitulos c ON t.codigoTemporada = c.codigoTemporada;
 GO
 
-CREATE VIEW vw_Series AS
-SELECT s.codigoSerie,s.nombreSerie,s.fechaEmisionInicio,s.fechaEmisionFin,s.codigoDescripcion,d.descripcion,d.clasificacionEdad,p.codigoProductora
-FROM series s
-INNER JOIN descripciones d
-ON s.codigoDescripcion=d.codigoDescripcion
-INNER JOIN productoras p
-ON d.codigoProductora=p.codigoProductora;
-GO
-
 CREATE VIEW vw_ComentariosDetalles AS
 SELECT 
     com.codigoComentario,
@@ -454,33 +369,6 @@ INNER JOIN usuarios u ON p.codigoUsuario = u.codigoUsuario
 INNER JOIN detallesComentarios dc ON com.codigoComentario = dc.codigoComentario
 INNER JOIN descripciones d ON dc.codigoDescripcion = d.codigoDescripcion;
 GO
-
--- Crear una vista llamada 'VistaSuscripcionesConUsuarios'
-CREATE VIEW vw_suscripcionesUsuarios AS
-
--- Seleccionar los campos necesarios de la tabla 'suscripciones' y contar los usuarios
-SELECT 
-    s.codigoSuscripcion,             -- Seleccionamos el código de la suscripción
-    s.nombreSuscripcion,             -- Seleccionamos el nombre de la suscripción
-    s.descripcion,                   -- Seleccionamos la descripción de la suscripción
-    COUNT(u.codigoUsuario) AS cantidadUsuarios  -- Contamos cuántos usuarios tienen esta suscripción
-FROM 
-    suscripciones s                  -- Tabla de suscripciones con alias 's'
-    
--- Hacemos un LEFT JOIN con la tabla 'usuarios' para incluir todos los registros de 'suscripciones', 
--- incluso aquellos que no tienen usuarios asociados
-LEFT JOIN 
-    usuarios u 
-ON 
-    s.codigoSuscripcion = u.codigoSuscripcion  -- Unimos las tablas por el campo común 'codigoSuscripcion'
-
--- Agrupar los resultados por los campos de la tabla 'suscripciones'
-GROUP BY 
-    s.codigoSuscripcion,             -- Agrupamos por el código de la suscripción
-    s.nombreSuscripcion,             -- Agrupamos por el nombre de la suscripción
-    s.descripcion;                   -- Agrupamos por la descripción de la suscripción
-
-
 
 -- Subconsultas
 
@@ -1117,7 +1005,7 @@ INSERT INTO productoras (codigoProductora, nombreProductora, direccionProductora
 ('P0010', 'New Line Cinema', '116 N Robertson Blvd, Los Angeles, CA', 'info@newline.com', '3108545811'),
 ('P0011', 'Studio Ghibli', '1-4-25 Kajino-cho, Koganei, Tokyo', 'contact@ghibli.jp', '8131234567'),
 ('P0012', 'Netflix Studios', '100 Winchester Cir, Los Gatos, CA', 'studios@netflix.com', '4085403700'),
-('P0013', 'Amazon Studios', '1620 26th St, Santa Monica, CA', 'studios@amazon.com', '3105732305'),
+('P0013', 'Amazon Studios', '1620 25th St, Santa Monica, CA', 'studios@amazon.com', '3105732305'),
 ('P0014', 'HBO Films', '30 Hudson Yards, New York, NY', 'contact@hbo.com', '2125121000'),
 ('P0015', 'Apple Studios', 'One Apple Park Way, Cupertino, CA', 'studios@apple.com', '4089961010'),
 ('P0016', 'BBC Studios', 'Television Centre, London', 'info@bbcstudios.com', '442087433000'),
@@ -1508,4 +1396,154 @@ INSERT INTO detallesComentarios (codigoComentario, codigoDescripcion) VALUES
 ('CM023', 'D0021'),
 ('CM024', 'D0023'),
 ('CM025', 'D0025');
+GO
+
+-- **CONSULTAS DE BÚSQUEDA (SELECT)**
+
+-- 1. Seleccionar todos los usuarios que tienen estado 'Activo'
+SELECT * FROM usuarios WHERE estadoCuenta = 'Activo';
+GO
+
+-- 2. Seleccionar todas las películas estrenadas después de 2020
+SELECT * FROM peliculas WHERE fechaEmision > '2020-12-31';
+GO
+
+-- 3. Seleccionar todos los comentarios realizados por 'Perfil Paula'
+SELECT c.*
+FROM comentarios c
+INNER JOIN perfiles p ON c.codigoPerfil = p.codigoPerfil
+WHERE p.nombrePerfil = 'Perfil Paula';
+GO
+
+-- 4. Seleccionar todos los perfiles asociados con 'Paula Morales'
+SELECT p.*
+FROM perfiles p
+INNER JOIN usuarios u ON p.codigoUsuario = u.codigoUsuario
+WHERE u.nombres = 'Paula' AND u.apellidos = 'Morales';
+GO
+
+-- 5. Seleccionar todas las películas de la categoría 'Educación'
+SELECT pel.*
+FROM peliculas pel
+INNER JOIN descripciones d ON pel.codigoDescripcion = d.codigoDescripcion
+INNER JOIN detallesCategorias dc ON d.codigoDescripcion = dc.codigoDescripcion
+INNER JOIN categorias c ON dc.codigoCategoria = c.codigoCategoria
+WHERE c.nombreCategoria = 'Educación';
+GO
+
+-- 6. Seleccionar todas las series y sus temporadas
+SELECT s.nombreSerie, t.nombreTemporada
+FROM series s
+INNER JOIN temporadas t ON s.codigoSerie = t.codigoSerie;
+GO
+
+-- 7. Seleccionar el monto total de cada factura
+SELECT f.codigoFactura, f.total
+FROM facturas f;
+GO
+
+-- 8. Seleccionar los usuarios junto con el nombre de su suscripción
+SELECT u.nombres, u.apellidos, s.nombreSuscripcion
+FROM usuarios u
+INNER JOIN suscripciones s ON u.codigoSuscripcion = s.codigoSuscripcion;
+GO
+
+-- 9. Seleccionar todas las productoras ubicadas en 'Los Angeles, CA'
+SELECT * FROM productoras WHERE direccionProductora LIKE '%Los Angeles, CA%';
+GO
+
+-- 10. Calcular la duración promedio de las películas
+SELECT AVG(DATEDIFF(MINUTE, '00:00:00', duracion)) AS PromedioDuracionMinutos
+FROM peliculas;
+GO
+
+-- **CONSULTAS DE ELIMINACIÓN (DELETE)**
+
+-- 1. Eliminar el comentario con código 'CM025'
+DELETE FROM comentarios WHERE codigoComentario = 'CM025';
+GO
+
+-- 2. Eliminar el perfil con código 'PF025'
+DELETE FROM perfiles WHERE codigoPerfil = 'PF025';
+GO
+
+-- 3. Eliminar el usuario con código 'U0025'
+DELETE FROM usuarios WHERE codigoUsuario = 'U0025';
+GO
+
+-- 4. Eliminar la película con código 'P0025'
+DELETE FROM peliculas WHERE codigoPelicula = 'P0025';
+GO
+
+-- 5. Eliminar la descripción con código 'D0025'
+DELETE FROM descripciones WHERE codigoDescripcion = 'D0025';
+GO
+
+-- 6. Eliminar la categoría con código 'C025'
+DELETE FROM categorias WHERE codigoCategoria = 'C025';
+GO
+
+-- 7. Eliminar la productora con código 'P0025'
+DELETE FROM productoras WHERE codigoProductora = 'P0025';
+GO
+
+-- 8. Eliminar todos los usuarios que tienen estado 'Inactivo'
+DELETE FROM usuarios WHERE estadoCuenta = 'Inactivo';
+GO
+
+
+-- 9. Eliminar todos los comentarios realizados antes del año 2000
+DELETE FROM comentarios WHERE codigoComentario IN (
+    SELECT c.codigoComentario
+    FROM comentarios c
+    INNER JOIN perfiles p ON c.codigoPerfil = p.codigoPerfil
+    INNER JOIN usuarios u ON p.codigoUsuario = u.codigoUsuario
+    WHERE u.fechaNacimiento < '2000-01-01'
+);
+GO
+
+-- 10. Eliminar todos los detalles de facturas para el usuario 'U0001'
+DELETE FROM detallesFacturas WHERE codigoUsuario = 'U0001';
+GO
+
+-- **CONSULTAS DE ACTUALIZACIÓN (UPDATE)**
+
+-- 1. Actualizar el correo electrónico de 'Paula Morales'
+UPDATE usuarios SET correo = 'paula.m@example.com' WHERE codigoUsuario = 'U0025';
+GO
+
+-- 2. Actualizar el nombre de la suscripción 'Gaming' a 'eSports'
+UPDATE suscripciones SET nombreSuscripcion = 'eSports' WHERE codigoSuscripcion = 'S0025';
+GO
+
+-- 3. Actualizar el estado de todos los usuarios 'Inactivo' a 'Activo'
+UPDATE usuarios SET estadoCuenta = 'Activo' WHERE estadoCuenta = 'Inactivo';
+GO
+
+-- 4. Actualizar la duración de 'Viaje al Universo' a '01:45:00'
+UPDATE peliculas SET duracion = '01:45:00' WHERE codigoPelicula = 'P0025';
+GO
+
+-- 5. Actualizar la descripción con código 'D0025'
+UPDATE descripciones SET descripcion = 'Documental actualizado sobre el espacio' WHERE codigoDescripcion = 'D0025';
+GO
+
+-- 6. Actualizar la contraseña del usuario 'U0001' a 'nuevaClave123'
+UPDATE usuarios SET clave = 'nuevaClave123' WHERE codigoUsuario = 'U0001';
+GO
+
+-- 7. Actualizar el estado de la cuenta del usuario 'U0003' a 'Activo'
+UPDATE usuarios SET estadoCuenta = 'Activo' WHERE codigoUsuario = 'U0003';
+GO
+
+-- 8. Actualizar el nombre de la categoría 'C025' a 'Educativo'
+UPDATE categorias SET nombreCategoria = 'Educativo' WHERE codigoCategoria = 'C025';
+GO
+
+-- 9. Actualizar el nombre de la productora 'P0025' a 'EduFilms'
+UPDATE productoras SET nombreProductora = 'EduFilms' WHERE codigoProductora = 'P0025';
+GO
+
+-- 10. Actualizar el total de la factura 'F0001' a 20.99
+UPDATE facturas SET total = 20.99 WHERE codigoFactura = 'F0001';
 GO
