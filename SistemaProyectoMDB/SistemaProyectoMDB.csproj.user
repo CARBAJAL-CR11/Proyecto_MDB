@@ -22,9 +22,6 @@
     <Compile Update="FrmTablaProductora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmTablaProductoraSerie.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="FrmFormUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -35,6 +32,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmFormSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmTablaProductoraSerie.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmTablaSeries.cs">

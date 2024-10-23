@@ -37,5 +37,47 @@ namespace Model
             message = null;
             return data;
         }
+        public static bool ingresarProductora(string codigo, string nombres, string direccion, string correo, string telefono, out string message)
+        {
+            DatabaseConnection dbConnection = new DatabaseConnection();
+
+            try
+            {
+                string query = "INSERT INTO productoras(codigoProductora,nombreProductora,direccionProductora,correoProductora,telefonoProductora) VALUES(@codigo,@nombre,@direccion,@correo,@telefono)";
+                using (SqlConnection connection = dbConnection.GetConnection())
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@codigo", codigo);
+                    cmd.Parameters.AddWithValue("@nombre", nombres);
+                    cmd.Parameters.AddWithValue("@direccion", direccion);
+                    cmd.Parameters.AddWithValue("@correo", correo);
+                    cmd.Parameters.AddWithValue("@telefono", telefono);
+
+                    connection.Open();
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        message = "Agregado Exitosamente";
+                        return true;
+                    }
+                    else
+                    {
+                        message = "No se insertó ningún registro.";
+                        return false;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = $"Error de SQL: {DatabaseValidations.FormatSqlErrorMessage(ex)}";
+                return false;
+            }
+            catch (Exception ex)
+            {
+                message = $"Error general al insertar el usuario: {ex.Message}";
+                return false;
+            }
+        }
     }
 }

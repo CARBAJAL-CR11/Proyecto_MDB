@@ -182,5 +182,11 @@ namespace SistemaProyectoMDB
             FrmTablaSuscripciones frmSuscripciones = new FrmTablaSuscripciones();
             OpenChildForm(frmSuscripciones);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmTablaProductora frmproductora = new FrmTablaProductora();
+            OpenChildForm(frmproductora);
+        }
     }
 }
