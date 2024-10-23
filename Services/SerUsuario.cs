@@ -38,5 +38,16 @@ namespace Services
                 return false;
             }
         }
+        public static bool ActualizarUsuario(ControllerUsuario usuario, out string message) {
+            try
+            {
+                return ModeloUsuario.actualizarUsuarios(usuario.codigoUsuario, usuario.nombresUsuario, usuario.apellidosUsuario, usuario.correoUsuario, usuario.claveUsuario, usuario.fechaNacimiento, usuario.estadoCuenta, usuario.tipoUsuario, usuario.suscripcion, out message);
+            }
+            catch (Exception ex)
+            {
+                message = $"Error al actualizar el usuario: {ex.Message}";
+                return false;
+            }
+        }
     }
 }

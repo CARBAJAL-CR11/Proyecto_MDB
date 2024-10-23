@@ -155,5 +155,50 @@ namespace Model
                 return false;
             }
         }
+        public static bool actualizarUsuarios(string codigo_usuario, string nombres, string apellidos, string correo, string clave, string fecha_nac, string estado_cuenta, string codigo_tipo, string codigo_subs, out string message)
+        {
+            DatabaseConnection dbConnection = new DatabaseConnection();
+
+            try
+            {
+                string query = "UPDATE usuarios SET nombres=@nombre, apellidos=@apellido, correo=@correo,fechaNacimiento=@fecha,estadoCuenta=@estado,codigoTipoUsuario=@codigoT,codigoSuscripcion=@codigoS WHERE codigoUsuario=@codigo";
+                using (SqlConnection connection = dbConnection.GetConnection())
+                using (SqlCommand cmd = new SqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@codigo", codigo_usuario);
+                    cmd.Parameters.AddWithValue("@nombre", nombres);
+                    cmd.Parameters.AddWithValue("@apellido", apellidos);
+                    cmd.Parameters.AddWithValue("@correo", correo);
+                    cmd.Parameters.AddWithValue("@fecha", fecha_nac);
+                    cmd.Parameters.AddWithValue("@estado", estado_cuenta);
+                    cmd.Parameters.AddWithValue("@codigoT", codigo_tipo);
+                    cmd.Parameters.AddWithValue("@codigoS", codigo_subs);
+
+                    connection.Open();
+                    int result = cmd.ExecuteNonQuery();
+
+                    if (result > 0)
+                    {
+                        message = "Actualizado Exitosamente";
+                        return true;
+                    }
+                    else
+                    {
+                        message = "No se actualizó ningún registro.";
+                        return false;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = $"Error de SQL: {DatabaseValidations.FormatSqlErrorMessage(ex)}";
+                return false;
+            }
+            catch (Exception ex)
+            {
+                message = $"Error general al insertar el usuario: {ex.Message}";
+                return false;
+            }
+        }
     }
 }

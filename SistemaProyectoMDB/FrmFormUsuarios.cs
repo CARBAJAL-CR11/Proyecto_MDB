@@ -14,19 +14,22 @@ namespace SistemaProyectoMDB
 {
     public partial class FrmFormUsuarios : Form
     {
-        public FrmFormUsuarios(string codigo=null)
+        private bool option = false;
+        public FrmFormUsuarios(string codigo = null)
         {
             InitializeComponent();
             cargarTipos();
+            BtnELiminar.Visible= false;
             cargarSubs();
-            if (codigo!=null)
+            if (codigo != null)
             {
                 DataTable datos = ServUsuario.cargarUnUsuario(codigo);
-                DataRow row= datos.Rows[0];
-
+                DataRow row = datos.Rows[0];
+                option = true;
+                BtnELiminar.Visible = true;
                 TxtNombres.Text = row["nombres"].ToString();
                 TxtApellidos.Text = row["apellidos"].ToString();
-                TxtCorreo.Text = row["correo"].ToString() ;
+                TxtCorreo.Text = row["correo"].ToString();
                 TxtCuenta.Text = row["estadoCuenta"].ToString();
                 txtCodigo.Text = row["codigoUsuario"].ToString();
                 CmbSubs.Text = row["nombreSuscripcion"].ToString();
@@ -82,10 +85,11 @@ namespace SistemaProyectoMDB
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 ControllerUsuario usuario = new ControllerUsuario
                 {
-                    codigoUsuario=txtCodigo.Text,
+                    codigoUsuario = txtCodigo.Text,
                     nombresUsuario = TxtNombres.Text,
                     apellidosUsuario = TxtApellidos.Text,
                     correoUsuario = TxtCorreo.Text,
@@ -95,23 +99,46 @@ namespace SistemaProyectoMDB
                     tipoUsuario = CmbTipos.SelectedValue.ToString(),
                     suscripcion = CmbSubs.SelectedValue.ToString()
                 };
-
-                string message;
-                bool isSuccess = ServUsuario.AgregarUsuario(usuario, out message);
-
-                if (isSuccess)
+                if (option == true)
                 {
-                    this.Close();
-                    MessageBox.Show("Usuario registrado exitosamente.");
+                    string message;
+                    bool isSuccess = ServUsuario.ActualizarUsuario(usuario, out message);
+
+                    if (isSuccess)
+                    {
+                        this.Close();
+                        MessageBox.Show("Usuario actualizado exitosamente.");
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al actualizar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    string message;
+                    bool isSuccess = ServUsuario.AgregarUsuario(usuario, out message);
+
+                    if (isSuccess)
+                    {
+                        this.Close();
+                        MessageBox.Show("Usuario registrado exitosamente.");
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-            } 
-            catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show($"Se produjo un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void BtnELiminar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
