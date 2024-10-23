@@ -18,7 +18,7 @@ namespace SistemaProyectoMDB
             InitializeComponent();
             CargarGridDatos();
         }
-        private void CargarGridDatos()
+        public void CargarGridDatos()
         {
             try
             {

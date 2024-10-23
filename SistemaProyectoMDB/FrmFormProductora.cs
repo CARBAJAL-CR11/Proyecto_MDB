@@ -55,8 +55,11 @@ namespace SistemaProyectoMDB
 
                     if (isSuccess)
                     {
-                        this.Close();
                         MessageBox.Show("Productora actualizada exitosamente.");
+                        FrmTablaProductora tablaproductora = Owner as FrmTablaProductora;
+                        tablaproductora.CargarGridDatos();
+                        this.Close();
+                       
                     }
                     else
                     {
@@ -70,8 +73,11 @@ namespace SistemaProyectoMDB
 
                     if (isSuccess)
                     {
-                        this.Close();
                         MessageBox.Show("Productora registrada exitosamente.");
+
+                        FrmTablaProductora tablaproductora = Owner as FrmTablaProductora;
+                        tablaproductora.CargarGridDatos();
+                        this.Close();
                     }
                     else
                     {
