@@ -16,21 +16,37 @@ namespace SistemaProyectoMDB
     {
         private string codigo_productora;
 
-        public FrmFormProductora(string codigo=null)
+        public FrmFormProductora(string codigo = null)
         {
             InitializeComponent();
+            txtCodigo.ReadOnly=false;
+            btnEliminar.Visible = false;
+            if (codigo != null)
+            {
+                DataTable datos = SerProductora.cargarUnaProductora(codigo);
+                DataRow row = datos.Rows[0];
+                txtCodigo.ReadOnly = true;
+                btnEliminar.Visible = true;
+                codigo_productora = codigo;
+                txtNombreProductora.Text = row["nombreProductora"].ToString();
+                txtCodigo.Text = row["codigoProductora"].ToString();
+                txtCorreo.Text = row["correoProductora"].ToString();
+                txtDirección.Text = row["direccionProductora"].ToString();
+                mtxtTelefono.Text = row["telefonoProductora"].ToString();
+            }
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
                 ControllerProductoras productoras = new ControllerProductoras
                 {
                     codigoProductora = txtCodigo.Text,
-                    nombreProductora=txtNombreProductora.Text,
-                    direccionProductora=txtDirección.Text,
-                    correoProductora=txtCorreo.Text,
-                    telefonoProductora=mtxtTelefono.Text
+                    nombreProductora = txtNombreProductora.Text,
+                    direccionProductora = txtDirección.Text,
+                    correoProductora = txtCorreo.Text,
+                    telefonoProductora = mtxtTelefono.Text
                 };
                 string message;
                 bool isSuccess = SerProductora.AgregarProductora(productoras, out message);
@@ -45,7 +61,8 @@ namespace SistemaProyectoMDB
                     MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show($"Se produjo un error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
@@ -54,6 +71,34 @@ namespace SistemaProyectoMDB
         private void FrmFormProductora_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult result = MessageBox.Show("¿ELiminar el usuario?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    /*CtrJugador jugador = new CtrJugador();
+                    jugador.IdJugador = CtrJugador._idJugador;*/
+                    string message;
+                    bool isSuccess = SerProductora.EliminarProductora(codigo_productora, out message);
+                    if (isSuccess)
+                    {
+                        MessageBox.Show("EL usuario fue eliminado", "Finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(message, " Error al registrar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

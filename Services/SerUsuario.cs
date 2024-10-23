@@ -56,7 +56,7 @@ namespace Services
             }
             catch (Exception ex)
             {
-                message = $"Error al registrar el jugador: {ex.Message}";
+                message = $"Error al eliminar el jugador: {ex.Message}";
                 return false;
             }
         }

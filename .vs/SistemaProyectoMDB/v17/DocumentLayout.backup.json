@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|c:\\users\\hp\\desktop\\mdb-proyect\\proyecto_mdb\\model\\modeloproductora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modeloproductora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\hp\\desktop\\mdb-proyect\\proyecto_mdb\\sistemaproyectomdb\\frmformproductora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|solutionrelative:sistemaproyectomdb\\frmformproductora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|c:\\users\\hp\\desktop\\mdb-proyect\\proyecto_mdb\\model\\modeloproductora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modeloproductora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\model\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|c:\\users\\hp\\desktop\\mdb-proyect\\proyecto_mdb\\sistemaproyectomdb\\frmformusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\services\\serusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0FFBB1F-9A6E-4CD9-BBEB-AD18D63F0781}|Services\\Services.csproj|solutionrelative:services\\serusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\model\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB292508-5E26-4B06-B1D2-53F9A3864204}|Model\\Model.csproj|solutionrelative:model\\modelousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{085B544E-8524-4CD7-8601-4557896194FF}|SistemaProyectoMDB\\SistemaProyectoMDB.csproj|C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\sistemaproyectomdb\\frmtablausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,51 +82,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FrmFormProductora.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormProductora.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormProductora.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormProductora.cs*",
-              "RelativeToolTip": "SistemaProyectoMDB\\FrmFormProductora.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowCsAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormProductora.cs",
+              "RelativeToolTip": "SistemaProyectoMDB\\FrmFormProductora.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T03:49:25.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ModeloProductora.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloProductora.cs",
               "RelativeDocumentMoniker": "Model\\ModeloProductora.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloProductora.cs*",
-              "RelativeToolTip": "Model\\ModeloProductora.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvyIAAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloProductora.cs",
+              "RelativeToolTip": "Model\\ModeloProductora.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwEUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T03:26:52.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "ModeloUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloUsuario.cs",
               "RelativeDocumentMoniker": "Model\\ModeloUsuario.cs",
               "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Model\\ModeloUsuario.cs",
               "RelativeToolTip": "Model\\ModeloUsuario.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAAwJIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T03:19:49.883Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ControllerProductoras.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\ControllerProductoras.cs",
               "RelativeDocumentMoniker": "Controller\\ControllerProductoras.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\ControllerProductoras.cs*",
-              "RelativeToolTip": "Controller\\ControllerProductoras.cs*",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Controller\\ControllerProductoras.cs",
+              "RelativeToolTip": "Controller\\ControllerProductoras.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T03:24:24.198Z",
@@ -134,19 +134,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FrmFormProductora.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormProductora.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormProductora.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormProductora.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "SistemaProyectoMDB\\FrmFormProductora.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormProductora.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaProyectoMDB\\FrmFormProductora.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T03:27:28.383Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FrmTablaUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmTablaUsuario.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmTablaUsuario.cs",
@@ -159,12 +159,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SerProductora.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerProductora.cs",
               "RelativeDocumentMoniker": "Services\\SerProductora.cs",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerProductora.cs*",
-              "RelativeToolTip": "Services\\SerProductora.cs*",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerProductora.cs",
+              "RelativeToolTip": "Services\\SerProductora.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T03:32:16.698Z",
@@ -172,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "SerUsuario.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\Services\\SerUsuario.cs",
               "RelativeDocumentMoniker": "Services\\SerUsuario.cs",
@@ -185,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FrmFormUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MDB-Proyect\\Proyecto_MDB\\SistemaProyectoMDB\\FrmFormUsuarios.cs",
               "RelativeDocumentMoniker": "SistemaProyectoMDB\\FrmFormUsuarios.cs",

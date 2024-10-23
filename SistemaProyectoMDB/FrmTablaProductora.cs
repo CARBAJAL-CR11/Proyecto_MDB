@@ -50,5 +50,21 @@ namespace SistemaProyectoMDB
             }
             else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void dgvProductoras_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posicion = dgvProductoras.CurrentRow.Index;
+
+            string Codigo = dgvProductoras[0, posicion].Value.ToString();
+            Form existingForm = Application.OpenForms.OfType<FrmFormUsuarios>().FirstOrDefault();
+
+
+            if (existingForm == null)
+            {
+                FrmFormProductora formulario = new FrmFormProductora(Codigo);
+                formulario.ShowDialog();
+            }
+            else MessageBox.Show("El formulario ya esta abierto", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
     }
 }

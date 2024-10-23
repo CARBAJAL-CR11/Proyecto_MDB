@@ -41,6 +41,7 @@
             btnGuardar = new Button();
             txtCodigo = new TextBox();
             label6 = new Label();
+            btnEliminar = new Button();
             SuspendLayout();
             // 
             // label9
@@ -168,11 +169,27 @@
             label6.TabIndex = 30;
             label6.Text = "Codigo";
             // 
+            // btnEliminar
+            // 
+            btnEliminar.BackColor = Color.Brown;
+            btnEliminar.FlatStyle = FlatStyle.Popup;
+            btnEliminar.Font = new Font("Century Gothic", 9F);
+            btnEliminar.ForeColor = SystemColors.Control;
+            btnEliminar.Location = new Point(424, 353);
+            btnEliminar.Margin = new Padding(3, 4, 3, 4);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(158, 49);
+            btnEliminar.TabIndex = 32;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
             // FrmFormProductora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(806, 427);
+            Controls.Add(btnEliminar);
             Controls.Add(txtCodigo);
             Controls.Add(label6);
             Controls.Add(btnGuardar);
@@ -211,5 +228,6 @@
         private Button btnGuardar;
         private TextBox txtCodigo;
         private Label label6;
+        private Button btnEliminar;
     }
 }

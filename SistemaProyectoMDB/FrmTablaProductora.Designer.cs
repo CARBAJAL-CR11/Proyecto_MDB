@@ -42,6 +42,7 @@
             dgvProductoras.RowHeadersWidth = 51;
             dgvProductoras.Size = new Size(1027, 596);
             dgvProductoras.TabIndex = 25;
+            dgvProductoras.CellDoubleClick += dgvProductoras_CellDoubleClick;
             // 
             // label1
             // 
